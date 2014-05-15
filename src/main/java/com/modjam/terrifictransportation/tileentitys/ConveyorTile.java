@@ -1,4 +1,4 @@
-package com.modjam.terrifictransportation.tileentitys;
+package com.modjam.terrifictransportation.TileEntitys;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;

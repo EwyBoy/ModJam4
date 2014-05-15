@@ -1,9 +1,8 @@
 package com.modjam.terrifictransportation.CreativeTabs;
 
-import net.minecraft.block.Block;
+import com.modjam.terrifictransportation.Blocks.Technical.Blocks;
+import com.modjam.terrifictransportation.Items.Technical.Items;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -18,7 +17,7 @@ public class TTCreativeTabs {
 
         public static CreativeTabs ClockworkBlockTab = new CreativeTabs ("Clockwork Block") {
             public ItemStack getIconItemStack() {
-                return new ItemStack(Blocks.anvil);
+                return new ItemStack(Blocks.Conveyor);
             }
             @Override
             public Item getTabIconItem() {
@@ -27,7 +26,7 @@ public class TTCreativeTabs {
         };
             public static CreativeTabs ClockworkItemTab = new CreativeTabs ("Clockwork Block") {
                 public ItemStack getIconItemStack() {
-                    return new ItemStack(Items.ender_eye);
+                    return new ItemStack(Items.Wrench);
                 }
             @Override
             public Item getTabIconItem() {

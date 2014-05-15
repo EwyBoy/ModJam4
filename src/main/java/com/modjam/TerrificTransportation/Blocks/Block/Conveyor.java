@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
@@ -30,12 +31,15 @@ public class Conveyor extends Block {
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {
 
         double entitySpeed = 0.025;
-        double entitySticker = 0.01;
         int meta = world.getBlockMetadata(x, y, z);
         int xAxis[] = {0,1,0,-1};
         int zAxis[] = {-1,0,1,0};
         double X = entity.posX;
         double Z = entity.posZ;
+
+        if (entity.isCollidedVertically && world.getBlock(x, y, z) == Blocks.chest) {
+            entity.setFire(10);
+        }
 
         if (xAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posX) < 0.5 & Math.abs(x + 0.5 - entity.posX) > 0.1) {
             entity.motionX += Math.signum(x + 0.5 - entity.posX) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posX)) / 1.2;
@@ -45,7 +49,9 @@ public class Conveyor extends Block {
             entity.motionZ += Math.signum(x + 0.5 - entity.posZ) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posZ)) / 1.2;
         }
 
-        entity.addVelocity(0, entitySticker, entitySpeed);
+        if (!entity.isSneaking()) {
+            entity.addVelocity(0, 0, entitySpeed);
+        }
     }
 
     @Override
