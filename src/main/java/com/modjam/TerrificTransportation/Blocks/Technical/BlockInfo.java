@@ -12,7 +12,8 @@ public class BlockInfo {
     public static int ConveyorRenderID;
     public static final String ConveyorKey = "Conveyor";
     public static final String ConveyorBlockName = "Conveyor";
-    public static final String ConveyorTexture = "Conveyor";
+    public static final String ConveyorTextureTop = "ConveyorStrip";
+    public static final String ConveyorTextureSides = "ironBlock";
 
 
 }

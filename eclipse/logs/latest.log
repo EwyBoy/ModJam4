@@ -1,8 +1,8 @@
-[18:15:47] [main/INFO]: Setting user: ForgeDevName
-[18:15:48] [Client thread/INFO]: LWJGL Version: 2.9.0
-[18:15:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
-[18:15:55] [Sound Library Loader/INFO]: Sound engine started
-[18:15:55] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/blocks/Conveyor.png
+[19:25:28] [main/INFO]: Setting user: ForgeDevName
+[19:25:29] [Client thread/INFO]: LWJGL Version: 2.9.0
+[19:25:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
+[19:25:36] [Sound Library Loader/INFO]: Sound engine started
+[19:25:36] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/blocks/Conveyor.png
 java.io.FileNotFoundException: terrifictransportation:textures/blocks/Conveyor.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -24,8 +24,8 @@ java.io.FileNotFoundException: terrifictransportation:textures/blocks/Conveyor.p
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[18:15:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:15:55] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench03.png
+[19:25:36] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[19:25:36] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench03.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench03.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -47,7 +47,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench03.pn
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[18:15:55] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench02.png
+[19:25:36] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench02.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench02.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -69,7 +69,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench02.pn
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[18:15:55] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench01.png
+[19:25:36] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench01.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench01.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -91,9 +91,9 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench01.pn
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[18:15:55] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:15:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
-[18:15:55] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench03.png
+[19:25:36] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[19:25:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
+[19:25:36] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench03.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench03.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -118,7 +118,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench03.pn
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[18:15:55] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench02.png
+[19:25:36] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench02.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench02.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -143,7 +143,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench02.pn
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[18:15:55] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench01.png
+[19:25:36] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Wrench01.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench01.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -168,8 +168,8 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Wrench01.pn
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[18:15:55] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:15:55] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/blocks/Conveyor.png
+[19:25:36] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[19:25:36] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/blocks/Conveyor.png
 java.io.FileNotFoundException: terrifictransportation:textures/blocks/Conveyor.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -194,22 +194,23 @@ java.io.FileNotFoundException: terrifictransportation:textures/blocks/Conveyor.p
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[18:15:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:15:56] [Sound Library Loader/INFO]: Sound engine started
-[18:15:57] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[18:15:58] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[18:15:58] [Server thread/INFO]: Generating keypair
-[18:15:59] [Server thread/INFO]: Preparing start region for level 0
-[18:16:00] [Server thread/INFO]: ForgeDevName[local:E:91f72872] logged in with entity id 333 at (72.69999998807907, 63.07339281331051, 291.5486683998554)
-[18:16:00] [Server thread/INFO]: ForgeDevName joined the game
-[18:16:48] [Server thread/INFO]: Saving and pausing game...
-[18:16:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:16:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:16:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:16:48] [Server thread/INFO]: Stopping server
-[18:16:48] [Server thread/INFO]: Saving players
-[18:16:48] [Server thread/INFO]: Saving worlds
-[18:16:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:16:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:16:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:16:49] [Client thread/INFO]: Stopping!
+[19:25:37] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[19:25:37] [Sound Library Loader/INFO]: Sound engine started
+[19:25:38] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[19:25:39] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[19:25:39] [Server thread/INFO]: Generating keypair
+[19:25:40] [Server thread/INFO]: Preparing start region for level 0
+[19:25:41] [Server thread/INFO]: Preparing spawn area: 85%
+[19:25:41] [Server thread/INFO]: ForgeDevName[local:E:0bee99e4] logged in with entity id 326 at (66.42638738332978, 64.20000000298023, 294.4338147377991)
+[19:25:41] [Server thread/INFO]: ForgeDevName joined the game
+[19:26:12] [Server thread/INFO]: Saving and pausing game...
+[19:26:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:26:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:26:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:26:12] [Server thread/INFO]: Stopping server
+[19:26:12] [Server thread/INFO]: Saving players
+[19:26:12] [Server thread/INFO]: Saving worlds
+[19:26:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:26:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:26:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:26:14] [Client thread/INFO]: Stopping!

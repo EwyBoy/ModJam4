@@ -5,6 +5,7 @@ import com.modjam.TerrificTransportation.Blocks.Technical.Blocks;
 import com.modjam.TerrificTransportation.CreativeTabs.TTCreativeTabs;
 import com.modjam.TerrificTransportation.Info.ModInfo;
 import com.modjam.TerrificTransportation.Items.Technical.Items;
+import com.modjam.TerrificTransportation.KeyBindings.KeyBindings;
 import com.modjam.TerrificTransportation.Network.CommonProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -28,6 +29,7 @@ public class TT
         Items.init();
         TTCreativeTabs.init();
         proxy.initRenders();
+        KeyBindings.shiftIsPressed();
     }
 
     @Mod.EventHandler

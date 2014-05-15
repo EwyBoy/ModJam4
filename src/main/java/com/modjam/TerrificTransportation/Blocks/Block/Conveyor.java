@@ -16,6 +16,8 @@ import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
+import java.lang.Override;
+
 public class Conveyor extends Block {
 
     public Conveyor() {
@@ -42,8 +44,6 @@ public class Conveyor extends Block {
         if (zAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posZ) < 0.5 & Math.abs(x + 0.5 - entity.posZ) > 0.1 ) {
             entity.motionZ += Math.signum(x + 0.5 - entity.posZ) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posZ)) / 1.2;
         }
-
-
 
         entity.addVelocity(0, entitySticker, 0 /*entitySpeed*/);
     }
@@ -100,8 +100,8 @@ public class Conveyor extends Block {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister register) {
-        TextureSide = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTexture);
-        TextureTop = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTexture);
+        TextureSide = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureSides);
+        TextureTop = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureTop);
     }
 
     @Override
@@ -118,5 +118,11 @@ public class Conveyor extends Block {
         }
         return TextureSide;
     }
+@Override
+    public void onNeighborChange(IBlockAccess world, int x, int y, int z, int tileX, int tileY, int tileZ){
+if(world.getBlock(x, y, z) instanceof this){
+if(world.gett)
+    }
 
+}
 }
