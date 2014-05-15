@@ -1,4 +1,4 @@
-package com.modjam.TerrificTransportation.Crafting;
+package com.modjam.terrifictransportation.Crafting;
 
 public class CraftingRecipes {
 }

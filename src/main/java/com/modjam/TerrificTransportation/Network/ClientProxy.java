@@ -1,7 +1,7 @@
-package com.modjam.TerrificTransportation.Network;
+package com.modjam.terrifictransportation.Network;
 
-import com.modjam.TerrificTransportation.Blocks.Technical.BlockInfo;
-import com.modjam.TerrificTransportation.Render.ConveyorRenderer;
+import com.modjam.terrifictransportation.Blocks.Technical.BlockInfo;
+import com.modjam.terrifictransportation.Render.ConveyorRenderer;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class ClientProxy extends CommonProxy {

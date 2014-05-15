@@ -1,4 +1,4 @@
-package com.modjam.TerrificTransportation.CreativeTabs;
+package com.modjam.terrifictransportation.CreativeTabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;

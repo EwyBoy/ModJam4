@@ -1,4 +1,4 @@
-package com.modjam.TerrificTransportation.KeyBindings;
+package com.modjam.terrifictransportation.KeyBindings;
 
 import org.lwjgl.input.Keyboard;
 

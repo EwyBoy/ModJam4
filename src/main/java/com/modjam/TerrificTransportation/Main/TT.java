@@ -1,12 +1,12 @@
-package com.modjam.TerrificTransportation.Main;
+package com.modjam.terrifictransportation.Main;
 
 
-import com.modjam.TerrificTransportation.Blocks.Technical.Blocks;
-import com.modjam.TerrificTransportation.CreativeTabs.TTCreativeTabs;
-import com.modjam.TerrificTransportation.Info.ModInfo;
-import com.modjam.TerrificTransportation.Items.Technical.Items;
-import com.modjam.TerrificTransportation.KeyBindings.KeyBindings;
-import com.modjam.TerrificTransportation.Network.CommonProxy;
+import com.modjam.terrifictransportation.Blocks.Technical.Blocks;
+import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
+import com.modjam.terrifictransportation.Info.ModInfo;
+import com.modjam.terrifictransportation.Items.Technical.Items;
+import com.modjam.terrifictransportation.KeyBindings.KeyBindings;
+import com.modjam.terrifictransportation.Network.CommonProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -19,7 +19,7 @@ public class TT
     @Mod.Instance(ModInfo.ModID)
     public static TT instance;
 
-    @SidedProxy(modId = ModInfo.ModID, clientSide = "com.modjam.TerrificTransportation.Network.ClientProxy", serverSide = "com.modjam.TerrificTransportation.Network.CommonProxy")
+    @SidedProxy(modId = ModInfo.ModID, clientSide = "com.modjam.terrifictransportation.Network.ClientProxy", serverSide = "com.modjam.terrifictransportation.Network.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler

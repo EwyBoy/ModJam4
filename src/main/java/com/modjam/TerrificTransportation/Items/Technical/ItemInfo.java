@@ -1,4 +1,4 @@
-package com.modjam.TerrificTransportation.Items.Technical;
+package com.modjam.terrifictransportation.Items.Technical;
 
 public class ItemInfo {
 

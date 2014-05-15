@@ -1,4 +1,4 @@
-package com.modjam.TerrificTransportation.Blocks.Technical;
+package com.modjam.terrifictransportation.Blocks.Technical;
 
 public class BlockInfo {
     /**
@@ -12,8 +12,8 @@ public class BlockInfo {
     public static int ConveyorRenderID;
     public static final String ConveyorKey = "Conveyor";
     public static final String ConveyorBlockName = "Conveyor";
-    public static final String ConveyorTextureTop = "ConveyorStrip";
-    public static final String ConveyorTextureSides = "ironBlock";
+    public static final String ConveyorTextureTop = "ConveyorSprite";
+    public static final String ConveyorTextureSides = "blockIron";
 
 
 }

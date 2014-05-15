@@ -1,6 +1,6 @@
-package com.modjam.TerrificTransportation.Render;
+package com.modjam.terrifictransportation.Render;
 
-import com.modjam.TerrificTransportation.Blocks.Technical.Blocks;
+import com.modjam.terrifictransportation.Blocks.Technical.Blocks;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
@@ -123,7 +123,6 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
             block.setBlockBounds(0F, 0F, 0F, 1F, 0.15F, 1F);
             renderer.setRenderBoundsFromBlock(block);
             renderer.renderStandardBlock(block, x, y ,z); */
-
 
         return true;
     }

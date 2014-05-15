@@ -1,8 +1,8 @@
-package com.modjam.TerrificTransportation.Blocks.Block;
+package com.modjam.terrifictransportation.Blocks.Block;
 
-import com.modjam.TerrificTransportation.Blocks.Technical.BlockInfo;
-import com.modjam.TerrificTransportation.CreativeTabs.TTCreativeTabs;
-import com.modjam.TerrificTransportation.Texture.TextureHandler;
+import com.modjam.terrifictransportation.Blocks.Technical.BlockInfo;
+import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
+import com.modjam.terrifictransportation.Texture.TextureHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -45,7 +45,7 @@ public class Conveyor extends Block {
             entity.motionZ += Math.signum(x + 0.5 - entity.posZ) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posZ)) / 1.2;
         }
 
-        entity.addVelocity(0, entitySticker, 0 /*entitySpeed*/);
+        entity.addVelocity(0, entitySticker, entitySpeed);
     }
 
     @Override
@@ -118,11 +118,12 @@ public class Conveyor extends Block {
         }
         return TextureSide;
     }
-@Override
+/**@Override
     public void onNeighborChange(IBlockAccess world, int x, int y, int z, int tileX, int tileY, int tileZ){
 if(world.getBlock(x, y, z) instanceof this){
 if(world.gett)
     }
 
 }
+*/
 }

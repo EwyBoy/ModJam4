@@ -1,9 +1,9 @@
-package com.modjam.TerrificTransportation.Items.Item;
+package com.modjam.terrifictransportation.Items.Item;
 
-import com.modjam.TerrificTransportation.CreativeTabs.TTCreativeTabs;
-import com.modjam.TerrificTransportation.Items.Technical.ItemInfo;
-import com.modjam.TerrificTransportation.KeyBindings.KeyBindings;
-import com.modjam.TerrificTransportation.Texture.TextureHandler;
+import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
+import com.modjam.terrifictransportation.Items.Technical.ItemInfo;
+import com.modjam.terrifictransportation.KeyBindings.KeyBindings;
+import com.modjam.terrifictransportation.Texture.TextureHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;

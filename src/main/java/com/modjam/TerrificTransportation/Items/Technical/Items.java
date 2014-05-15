@@ -1,6 +1,6 @@
-package com.modjam.TerrificTransportation.Items.Technical;
+package com.modjam.terrifictransportation.Items.Technical;
 
-import com.modjam.TerrificTransportation.Items.Item.Wrench;
+import com.modjam.terrifictransportation.Items.Item.Wrench;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 

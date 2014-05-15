@@ -1,6 +1,6 @@
-package com.modjam.TerrificTransportation.Blocks.Technical;
+package com.modjam.terrifictransportation.Blocks.Technical;
 
-import com.modjam.TerrificTransportation.Blocks.Block.Conveyor;
+import com.modjam.terrifictransportation.Blocks.Block.Conveyor;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 
