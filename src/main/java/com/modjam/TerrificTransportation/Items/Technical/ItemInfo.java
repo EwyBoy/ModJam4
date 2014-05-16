@@ -9,11 +9,11 @@ public class ItemInfo {
 
     public static final String ModulesUnlocalized = "Modules";
     public static final String [] ModulesTexture = {
-      "ModuleSpeed","ModuleCenter", "Module", "Module"
+      "ModuleSpeed","ModuleCenter", "Module", "Module", "Module", "Module"
     };
 
     public static final String CraftingCompUnlocalized = "CraftingComponents";
     public static final String [] CraftingCompTexture = {
-            "Gear","Roller", "RollerStrip", "Belt"
+            "Gear", "ConveyorRoller", "ConveyorStrip", "ConveyorBelt", "WrenchHead", "WrenchCore", "WrenchHandel"
     };
 }

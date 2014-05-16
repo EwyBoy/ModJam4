@@ -21,6 +21,7 @@ public class Router extends Block {
         super(Material.iron);
         setCreativeTab(TTCreativeTabs.ClockworkBlockTab);
         setHardness(1F);
+        setLightOpacity(0);
     }
 
     @Override
@@ -53,7 +54,7 @@ public class Router extends Block {
 
     @Override
     public void setBlockBoundsForItemRender() {
-
+        setBlockBounds(0.15F, 0F, 0.15F, 0.85F, 0.85F, 0.85F);
     }
 
     @Override

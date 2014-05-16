@@ -67,7 +67,7 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
         GL11.glPopMatrix();
     }
 
-    public static void standerConveyorShapeZ(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
+    public static void conveyorDirZ(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
         block.setBlockBounds(0F, 0F, 0F, 1F, 0.15F, 1F);
         renderer.setRenderBoundsFromBlock(block);
@@ -82,7 +82,7 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
         renderer.renderStandardBlock(block, x, y ,z);
     }
 
-    public static void standerConveyorShapeX(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
+    public static void conveyorDirX(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
         block.setBlockBounds(0F, 0F, 0F, 1F, 0.15F, 1F);
         renderer.setRenderBoundsFromBlock(block);
@@ -99,19 +99,7 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
         renderer.renderStandardBlock(block, x, y ,z);
     }
 
-    public static void conveyorChestConnect(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
-
-        block.setBlockBounds(0F, 0F, 0F, 1F, 0.15F, 1F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y ,z);
-
-        block.setBlockBounds(0F, 0F, 0F, 0.10F, 0.25F, 1F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y, z);
-
-        block.setBlockBounds(0.90F, 0F, 0F, 1F, 0.25F, 1F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y ,z);
+    public static void conveyorInventoryConnectPosZ(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
         //top
         block.setBlockBounds(0F, 0.75F, 0.5F, 1F, 0.85F, 1F);
@@ -129,7 +117,25 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
         renderer.renderStandardBlock(block, x, y ,z);
     }
 
-    public static void conveyorOverHopper(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
+    public static void conveyorInventoryConnectNegZ(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
+
+        //top
+        block.setBlockBounds(0F, 0.75F, 0F, 1F, 0.85F, 0.5F);
+        renderer.setRenderBoundsFromBlock(block);
+        renderer.renderStandardBlock(block, x, y ,z);
+
+        //left
+        block.setBlockBounds(0.90F, 0.75F, 0.5F, 1F, 0.25F, 0F);
+        renderer.setRenderBoundsFromBlock(block);
+        renderer.renderStandardBlock(block, x, y, z);
+
+        //right
+        block.setBlockBounds(0F, 0.75F, 0.5F, 0.10F, 0.25F, 0F);
+        renderer.setRenderBoundsFromBlock(block);
+        renderer.renderStandardBlock(block, x, y ,z);
+    }
+
+    public static void conveyorOverInventory(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
         block.setBlockBounds(0F, 0F, 0F, 1F, 0.15F, 0.25F);
         renderer.setRenderBoundsFromBlock(block);
@@ -146,47 +152,12 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
         block.setBlockBounds(0.75F, 0F, 0F, 1F, 0.15F, 1);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
-
 
         block.setBlockBounds(0F, 0F, 0F, 0.10F, 0.25F, 1F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
 
         block.setBlockBounds(0.90F, 0F, 0F, 1F, 0.25F, 1F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y ,z);
-    }
-
-    public static void conveyorOverHopperWithChest(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
-
-        block.setBlockBounds(0F, 0F, 0F, 1F, 0.15F, 0.25F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y ,z);
-
-        block.setBlockBounds(0F, 0F, 0F, 0.25F, 0.15F, 1F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y ,z);
-
-        block.setBlockBounds(0F, 0F, 0.75F, 1F, 0.15F, 1F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y ,z);
-
-        block.setBlockBounds(0.75F, 0F, 0F, 1F, 0.15F, 1);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y ,z);
-
-        //top
-        block.setBlockBounds(0F, 0.75F, 0.5F, 1F, 0.85F, 1F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y ,z);
-
-        //left
-        block.setBlockBounds(0F, 0.75F, 1F, 0.10F, 0.25F, 0.5F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y, z);
-
-        //right
-        block.setBlockBounds(0.90F, 0.75F, 1F, 1F, 0.25F, 0.5F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
     }
@@ -194,26 +165,57 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
     @Override
     public boolean renderWorldBlock(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
         Tessellator.instance.setColorOpaque_F(1F, 1F, 1F);
+        Block router = com.modjam.terrifictransportation.Blocks.Technical.Blocks.Router;
 
-        if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper  && world.getTileEntity(x, y, z + 1) instanceof IInventory) {
-            conveyorOverHopperWithChest(world, x, y, z, block, modelId, renderer);
+        if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper || (world.getBlock(x, y - 1, z) == router)) {
+            conveyorOverInventory(world, x, y, z, block, modelId, renderer);
+            if (world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x, y, z + 1) == router)) {
+                conveyorInventoryConnectPosZ(world, x, y, z, block, modelId, renderer);
+            }
+            if (world.getTileEntity(x, y, z - 1) instanceof IInventory || (world.getBlock(x, y, z - 1) == router)) {
+                conveyorInventoryConnectNegZ(world, x, y, z, block, modelId, renderer);
+            }
+        } else  {
+            conveyorDirZ(world, x, y, z, block, modelId, renderer);
+            if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper  && world.getTileEntity(x, y, z + 1) instanceof IInventory
+                    || (world.getBlock(x, y, z + 1) == router)) {
+                conveyorInventoryConnectPosZ(world, x, y, z, block, modelId, renderer);
+            }
+            if(world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x, y, z + 1) == router)) {
+                conveyorInventoryConnectPosZ(world, x, y, z, block, modelId, renderer);
+            }
+            if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper  && world.getTileEntity(x, y, z - 1) instanceof IInventory
+                    || (world.getBlock(x, y, z - 1) == router)) {
+                conveyorInventoryConnectNegZ(world, x, y, z, block, modelId, renderer);
+            }
+            if(world.getTileEntity(x, y, z - 1) instanceof IInventory || (world.getBlock(x, y, z - 1) == router)) {
+                conveyorInventoryConnectNegZ(world, x, y, z, block, modelId, renderer);
+            }
         }
-        if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper)  {
-            conveyorOverHopper(world, x, y, z, block, modelId, renderer);
 
-        } else if(world.getTileEntity(x, y, z + 1) instanceof IInventory) {
-            conveyorChestConnect(world, x, y, z, block, modelId, renderer);
-        }
-         else {
-            standerConveyorShapeZ(world, x, y, z, block, modelId, renderer);
-        }
+
+
 
        /** if (world.getBlock(x + 1, y, z) == Blocks.Conveyor && world.getBlock(x, y, z + 1) == Blocks.Conveyor
           && world.getBlock(x - 1, y, z) == Blocks.Conveyor && world.getBlock(x, y, z - 1) == Blocks.Conveyor) {
 
             block.setBlockBounds(0F, 0F, 0F, 1F, 0.15F, 1F);
             renderer.setRenderBoundsFromBlock(block);
-            renderer.renderStandardBlock(block, x, y ,z); */
+            renderer.renderStandardBlock(block, x, y ,z);
+
+        if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper  && world.getTileEntity(x, y, z + 1) instanceof IInventory) {
+        conveyorOverHopperWithChest(world, x, y, z, block, modelId, renderer);
+        }
+        if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper)  {
+        conveyorOverHopper(world, x, y, z, block, modelId, renderer);
+
+        } else if(world.getTileEntity(x, y, z + 1) instanceof IInventory) {
+        conveyorChestConnect(world, x, y, z, block, modelId, renderer);
+        }
+        else {
+        standerConveyorShapeZ(world, x, y, z, block, modelId, renderer);
+        }
+        */
 
         return true;
     }

@@ -1,14 +1,11 @@
 package com.modjam.terrifictransportation.Render;
 
-import com.modjam.terrifictransportation.Blocks.Block.Conveyor;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.init.Blocks;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
 import org.lwjgl.opengl.GL11;
 
@@ -95,14 +92,14 @@ public class RouterRender implements ISimpleBlockRenderingHandler {
 
     private void renderSideNegZ(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
-        block.setBlockBounds(0.75F, 0.30F, 0F, 0.25F, 0.70F, 0.85F);
+        block.setBlockBounds(0.25F, 0.30F, 0F, 0.75F, 0.70F, 0.15F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
     }
 
     private void renderSideY(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
-        block.setBlockBounds(0.15F, 0F, 0.15F, 0.85F, 0.85F, 0.85F);
+        block.setBlockBounds(0.25F, 0.30F, 0.25F, 0.75F, 1F, 0.75F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
     }
@@ -116,20 +113,24 @@ public class RouterRender implements ISimpleBlockRenderingHandler {
         if (world.getBlock(x, y, z) == router) {
             defaultRender(world, x, y, z, block, modelId, renderer);
 
-            if (world.getTileEntity(x + 1, y, z) instanceof IInventory || world.getBlock(x + 1, y, z) == conveyor) {
+            if (world.getTileEntity(x + 1, y, z) instanceof IInventory || world.getBlock(x + 1, y, z) == conveyor || (world.getBlock(x + 1, y, z)) == router) {
                 renderSidePosX(world, x, y, z, block, modelId, renderer);
             }
 
-            if (world.getTileEntity(x - 1, y, z) instanceof IInventory || world.getBlock(x - 1, y, z) == conveyor) {
+            if (world.getTileEntity(x - 1, y, z) instanceof IInventory || world.getBlock(x - 1, y, z) == conveyor || (world.getBlock(x - 1, y, z)) == router) {
                 renderSideNegX(world, x, y, z, block, modelId, renderer);
             }
 
-            if (world.getTileEntity(x, y, z + 1) instanceof IInventory || world.getBlock(x, y, z + 1) == conveyor) {
+            if (world.getTileEntity(x, y, z + 1) instanceof IInventory || world.getBlock(x, y, z + 1) == conveyor || (world.getBlock(x, y, z + 1)) == router) {
                 renderSidePosZ(world, x, y, z, block, modelId, renderer);
             }
 
-            if (world.getTileEntity(x, y, z - 1) instanceof IInventory || world.getBlock(x, y, z - 1) == conveyor) {
+            if (world.getTileEntity(x, y, z - 1) instanceof IInventory || world.getBlock(x, y, z - 1) == conveyor || (world.getBlock(x, y, z - 1)) == router) {
                 renderSideNegZ(world, x, y, z, block, modelId, renderer);
+            }
+
+            if (world.getTileEntity(x, y + 1, z) instanceof IInventory || world.getBlock(x, y + 1, z) == conveyor || (world.getBlock(x, y + 1, z)) == router) {
+                renderSideY(world, x, y, z, block, modelId, renderer);
             }
         }
         return true;

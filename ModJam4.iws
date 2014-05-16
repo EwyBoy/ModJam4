@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbba15a-afea-4b9b-aa37-d7212d1a140d" name="Default" comment="Push to Rush">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java" />
+      <change type="DELETED" beforePath="C:\Users\Eivind\Desktop\ModJam4\src\main\resources\assets\terrifictransportation\textures\blocks\Module.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Eivind\Desktop\ModJam4\src\main\resources\assets\terrifictransportation\textures\blocks\ModuleCenter.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Eivind\Desktop\ModJam4\src\main\resources\assets\terrifictransportation\textures\blocks\ModuleSpeed.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-1.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-1.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-2.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-2.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-3.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-3.log.gz" />
@@ -14,6 +16,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-6.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-6.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-7.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-7.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/players/ForgeDevName.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/players/ForgeDevName.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/screenshots/Thumbs.db" afterPath="$PROJECT_DIR$/eclipse/screenshots/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/textures/items/Thumbs.db" afterPath="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/textures/items/Thumbs.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/level.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/level.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/level.dat_old" afterPath="$PROJECT_DIR$/eclipse/saves/New World/level.dat_old" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/region/r.-1.0.mca" afterPath="$PROJECT_DIR$/eclipse/saves/New World/region/r.-1.0.mca" />
@@ -22,12 +26,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/DIM-1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/DIM-1/data/villages.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/DIM1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/DIM1/data/villages.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/data/villages.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/BlockInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/BlockInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/Blocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/Blocks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Network/ClientProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Network/ClientProxy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/stats/ForgeDevName.json" afterPath="$PROJECT_DIR$/eclipse/saves/New World/stats/ForgeDevName.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/Items.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/Items.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ModJam4.iws" afterPath="$PROJECT_DIR$/ModJam4.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" />
@@ -108,6 +114,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ItemInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Blocks.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/Blocks.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,15 +132,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RouterRender.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Items.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/Items.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RouterRender.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="64" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.65580183" vertical-offset="1146" max-vertical-offset="2601">
+            <state line="65" column="0" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2618">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5839#5840#0" expanded="true" />
-                <element signature="e#5864#5865#0" expanded="true" />
+                <element signature="e#6115#6116#0" expanded="true" />
+                <element signature="e#6140#6141#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Router.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="0" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="1581">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CraftingRecipes.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="119" selection-start="886" selection-end="886" vertical-scroll-proportion="0.43202034" vertical-offset="0" max-vertical-offset="787">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CraftingComponents.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Item/CraftingComponents.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="46" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="833">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,17 +188,16 @@
       <file leaf-file-name="ConveyorRenderer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="8" selection-start="4903" selection-end="5063" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3774">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Conveyor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Conveyor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="28" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="2108">
-              <folding />
+            <state line="180" column="65" selection-start="7617" selection-end="7617" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="2397">
+              <folding>
+                <element signature="method#conveyorDirZ#0;class#ConveyorRenderer#0" expanded="false" />
+                <element signature="method#conveyorDirX#0;class#ConveyorRenderer#0" expanded="false" />
+                <element signature="method#conveyorInventoryConnectPosZ#0;class#ConveyorRenderer#0" expanded="false" />
+                <element signature="method#conveyorInventoryConnectNegZ#0;class#ConveyorRenderer#0" expanded="false" />
+                <element signature="method#conveyorOverInventory#0;class#ConveyorRenderer#0" expanded="false" />
+                <element signature="e#9687#9688#0" expanded="true" />
+                <element signature="e#9712#9713#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,18 +249,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/CreativeTabs/TTCreativeTabs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Item/Modules.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Conveyor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Main/TT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Item/CraftingComponents.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/Items.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/BlockInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/Blocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Network/ClientProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java" />
       </list>
     </option>
   </component>
@@ -401,105 +455,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Render" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModJam4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModJam4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="terrifictransportation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModJam4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModJam4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="terrifictransportation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Technical" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModJam4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModJam4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="terrifictransportation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Block" />
+              <option name="myItemId" value="Crafting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -768,7 +724,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14362851" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14362851" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -780,13 +736,39 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18477103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.122030236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.122030236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27429804" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14362851" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Floobits Chat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22354212" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12526998" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18477103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.122030236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -864,7 +846,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Info/ModInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238" />
+        <state line="8" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Texture/TextureHandler.java">
@@ -910,7 +894,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Info/ModInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238" />
+        <state line="8" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/KeyBindings/KeyBindings.java">
@@ -1014,7 +1000,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Info/ModInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="62" selection-start="268" selection-end="268" vertical-scroll-proportion="0.16478191" vertical-offset="0" max-vertical-offset="619" />
+        <state line="6" column="62" selection-start="268" selection-end="268" vertical-scroll-proportion="0.16478191" vertical-offset="0" max-vertical-offset="619">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/server/MinecraftServer.java">
@@ -1030,13 +1018,6 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraftforge/oredict/ShapedOreRecipe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="13" selection-start="437" selection-end="437" vertical-scroll-proportion="-2.3748271" vertical-offset="1785" max-vertical-offset="4454" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Item/Modules.java">
@@ -1055,34 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="32" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Item/CraftingComponents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="211" selection-end="211" vertical-scroll-proportion="0.18888889" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/BlockInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="57" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
@@ -1097,24 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Conveyor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="28" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="1385" max-vertical-offset="2108">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="5" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.13121547" vertical-offset="772" max-vertical-offset="1598">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="true" />
-            <element signature="e#2018#2019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/Blocks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
@@ -1122,20 +1057,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Conveyor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="28" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="1385" max-vertical-offset="2108">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="8" selection-start="4903" selection-end="5063" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3774">
-          <folding />
+        <state line="180" column="65" selection-start="7617" selection-end="7617" vertical-scroll-proportion="0.0" vertical-offset="953" max-vertical-offset="2397">
+          <folding>
+            <element signature="method#conveyorDirZ#0;class#ConveyorRenderer#0" expanded="false" />
+            <element signature="method#conveyorDirX#0;class#ConveyorRenderer#0" expanded="false" />
+            <element signature="method#conveyorInventoryConnectPosZ#0;class#ConveyorRenderer#0" expanded="false" />
+            <element signature="method#conveyorInventoryConnectNegZ#0;class#ConveyorRenderer#0" expanded="false" />
+            <element signature="method#conveyorOverInventory#0;class#ConveyorRenderer#0" expanded="false" />
+            <element signature="e#9687#9688#0" expanded="true" />
+            <element signature="e#9712#9713#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="64" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.65580183" vertical-offset="1146" max-vertical-offset="2601">
+        <state line="65" column="0" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2618">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5839#5840#0" expanded="true" />
-            <element signature="e#5864#5865#0" expanded="true" />
+            <element signature="e#6115#6116#0" expanded="true" />
+            <element signature="e#6140#6141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Item/CraftingComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="46" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="106" selection-end="106" vertical-scroll-proportion="0.15120712" vertical-offset="0" max-vertical-offset="787">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="0" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="1581">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="119" selection-start="886" selection-end="886" vertical-scroll-proportion="0.43202034" vertical-offset="0" max-vertical-offset="787">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
