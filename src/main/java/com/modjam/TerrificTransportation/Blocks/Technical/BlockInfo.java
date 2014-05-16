@@ -15,6 +15,11 @@ public class BlockInfo {
     public static final String ConveyorTextureSidesX = "Conveyor2Empty";
     public static final String ConveyorTextureSidesZ = "ConveyorBlank";
 
+    public static int RouterRenderID;
+    public static final String RouterKey = "Router";
+    public static final String RouterBlockName = "Router";
+    public static final String RouterTexture = "blockIron";
+
 
 
 }

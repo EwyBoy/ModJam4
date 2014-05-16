@@ -1,9 +1,9 @@
-[16:42:35] [main/INFO]: Setting user: ForgeDevName
-[16:42:36] [Client thread/INFO]: LWJGL Version: 2.9.0
-[16:42:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
-[16:42:43] [Sound Library Loader/INFO]: Sound engine started
-[16:42:43] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:42:43] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Module.png
+[22:58:36] [main/INFO]: Setting user: ForgeDevName
+[22:58:37] [Client thread/INFO]: LWJGL Version: 2.9.0
+[22:58:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
+[22:58:44] [Sound Library Loader/INFO]: Sound engine started
+[22:58:45] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Module.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Module.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -21,12 +21,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Module.png
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:43] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/ModuleSpeed.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/ModuleSpeed.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/ModuleSpeed.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -44,12 +39,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/ModuleSpeed
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:43] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Gear.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Gear.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Gear.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -67,12 +57,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Gear.png
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:43] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/RollerStrip.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/RollerStrip.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/RollerStrip.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -90,12 +75,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/RollerStrip
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:43] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Roller.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Roller.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Roller.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -113,12 +93,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Roller.png
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:43] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Belt.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Belt.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Belt.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -136,12 +111,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Belt.png
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:43] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/ModuleCenter.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/ModuleCenter.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/ModuleCenter.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -159,14 +129,9 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/ModuleCente
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:43] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[16:42:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
-[16:42:44] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Module.png
+[22:58:45] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[22:58:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Module.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Module.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -187,12 +152,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Module.png
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:44] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/ModuleSpeed.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/ModuleSpeed.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/ModuleSpeed.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -213,12 +173,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/ModuleSpeed
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:44] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Gear.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Gear.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Gear.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -239,12 +194,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Gear.png
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:44] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/RollerStrip.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/RollerStrip.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/RollerStrip.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -265,12 +215,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/RollerStrip
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:44] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Roller.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Roller.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Roller.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -291,12 +236,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Roller.png
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:44] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Belt.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/Belt.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/Belt.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -317,12 +257,7 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/Belt.png
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:44] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/ModuleCenter.png
+[22:58:45] [Client thread/ERROR]: Using missing texture, unable to load terrifictransportation:textures/items/ModuleCenter.png
 java.io.FileNotFoundException: terrifictransportation:textures/items/ModuleCenter.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -343,28 +278,28 @@ java.io.FileNotFoundException: terrifictransportation:textures/items/ModuleCente
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_51]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_51]
-	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_51]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:120) [idea_rt.jar:?]
-[16:42:44] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[16:42:44] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:42:45] [Sound Library Loader/INFO]: Sound engine started
-[16:42:45] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[16:42:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[16:42:49] [Server thread/INFO]: Generating keypair
-[16:42:49] [Server thread/INFO]: Preparing start region for level 0
-[16:42:51] [Server thread/INFO]: ForgeDevName[local:E:4966c8fb] logged in with entity id 339 at (86.81153255997938, 66.6034096270379, 309.5549142794902)
-[16:42:51] [Server thread/INFO]: ForgeDevName joined the game
-[16:45:13] [Server thread/INFO]: Saving and pausing game...
-[16:45:13] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:45:13] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:45:13] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:45:13] [Server thread/INFO]: Stopping server
-[16:45:13] [Server thread/INFO]: Saving players
-[16:45:13] [Server thread/INFO]: Saving worlds
-[16:45:13] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:45:13] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:45:13] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:45:15] [Client thread/INFO]: Stopping!
+[22:58:45] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[22:58:46] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[22:58:47] [Sound Library Loader/INFO]: Sound engine started
+[22:58:47] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[22:58:54] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[22:58:54] [Server thread/INFO]: Generating keypair
+[22:58:54] [Server thread/INFO]: Preparing start region for level 0
+[22:58:55] [Server thread/INFO]: Preparing spawn area: 90%
+[22:58:56] [Server thread/INFO]: ForgeDevName[local:E:feca2842] logged in with entity id 351 at (53.557932894079336, 64.0, 321.52721394318604)
+[22:58:56] [Server thread/INFO]: ForgeDevName joined the game
+[23:03:38] [Server thread/INFO]: Saving and pausing game...
+[23:03:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:03:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:03:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:03:48] [Server thread/INFO]: Saving and pausing game...
+[23:03:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:03:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:03:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:03:49] [Server thread/INFO]: Stopping server
+[23:03:49] [Server thread/INFO]: Saving players
+[23:03:49] [Server thread/INFO]: Saving worlds
+[23:03:49] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:03:49] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:03:49] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:03:50] [Client thread/INFO]: Stopping!

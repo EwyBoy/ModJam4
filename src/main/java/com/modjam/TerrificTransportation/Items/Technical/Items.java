@@ -28,6 +28,4 @@ public class Items {
         GameRegistry.registerItem(Modules, ItemInfo.ModulesUnlocalized);
         GameRegistry.registerItem(CraftingComp, ItemInfo.CraftingCompUnlocalized);
     }
-
-
 }
