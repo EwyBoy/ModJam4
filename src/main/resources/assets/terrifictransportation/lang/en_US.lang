@@ -4,4 +4,9 @@ tile.Conveyor.name=Conveyor Belt
 
 #Items
 
-item.Wrench.name=Wrench
+CraftingComponent0.name=Gear
+CraftingComponent1.name=Roller
+CraftingComponent2.name=Roller Strip
+CraftingComponent3.name=Wrench Head
+CraftingComponent4.name=Core
+CraftingComponent5.name=Wrench Handel

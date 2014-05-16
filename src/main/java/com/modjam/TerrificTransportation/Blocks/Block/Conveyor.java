@@ -17,8 +17,6 @@ import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-import java.lang.Override;
-
 public class Conveyor extends Block {
 
     public Conveyor() {
@@ -101,28 +99,30 @@ public class Conveyor extends Block {
     private IIcon TextureTop;
 
     @SideOnly(Side.CLIENT)
-    private IIcon TextureSide;
+    private IIcon TextureSideX;
+    private IIcon TextureSideZ;
 
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister register) {
-        TextureSide = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureSides);
+        TextureSideX = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureSidesX);
+        TextureSideZ = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureSidesZ);
         TextureTop = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureTop);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side , int meta) {
-
-        if (side == 1)
-        {
-            return TextureTop;
+        if(side == 1) {
+           return TextureTop;
         }
-        else if (side == 0)
-        {
-            return TextureSide;
+        if (side == 4) {
+            return TextureSideX;
         }
-        return TextureSide;
+        if (side == 5) {
+            return TextureSideX;
+        }
+        return TextureSideZ;
     }
 /**@Override
     public void onNeighborChange(IBlockAccess world, int x, int y, int z, int tileX, int tileY, int tileZ){

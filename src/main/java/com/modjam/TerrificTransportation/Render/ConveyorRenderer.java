@@ -1,13 +1,18 @@
 package com.modjam.terrifictransportation.Render;
 
-import com.modjam.terrifictransportation.Blocks.Technical.Blocks;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.init.Blocks;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.tileentity.IHopper;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityHopper;
 import net.minecraft.world.IBlockAccess;
 import org.lwjgl.opengl.GL11;
+import scala.tools.nsc.typechecker.Infer;
 
 public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
 
@@ -190,19 +195,16 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
     public boolean renderWorldBlock(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
         Tessellator.instance.setColorOpaque_F(1F, 1F, 1F);
 
-        if (world.getBlock(x, y - 1, z) == net.minecraft.init.Blocks.hopper) {
+        if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper  && world.getTileEntity(x, y, z + 1) instanceof IInventory) {
+            conveyorOverHopperWithChest(world, x, y, z, block, modelId, renderer);
+        }
+        if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper)  {
             conveyorOverHopper(world, x, y, z, block, modelId, renderer);
 
-            if (world.getBlock(x, y - 1, z) == net.minecraft.init.Blocks.hopper && world.getBlock(x, y, z + 1) == net.minecraft.init.Blocks.chest) {
-                conveyorOverHopperWithChest(world, x, y, z, block, modelId, renderer);
-            }
-
-        } else if (world.getBlock(x, y, z + 1) == net.minecraft.init.Blocks.chest || world.getBlock(x, y, z + 1) == net.minecraft.init.Blocks.ender_chest ||
-                world.getBlock(x, y, z + 1) == net.minecraft.init.Blocks.trapped_chest ||world.getBlock(x, y, z + 1) == net.minecraft.init.Blocks.furnace
-                || world.getBlock(x, y, z + 1) == net.minecraft.init.Blocks.cauldron || world.getBlock(x, y, z + 1) == net.minecraft.init.Blocks.dispenser
-                || world.getBlock(x, y, z + 1) == net.minecraft.init.Blocks.dropper || world.getBlock(x, y, z + 1) == net.minecraft.init.Blocks.jukebox) {
+        } else if(world.getTileEntity(x, y, z + 1) instanceof IInventory) {
             conveyorChestConnect(world, x, y, z, block, modelId, renderer);
-        } else {
+        }
+         else {
             standerConveyorShapeZ(world, x, y, z, block, modelId, renderer);
         }
 
