@@ -1,0 +1,11 @@
+/gradle
+/eclipse
+/build
+/out
+/.gradle
+*.txt
+*.zip
+*.iml
+*.iws
+*.bat
+*.gradle
