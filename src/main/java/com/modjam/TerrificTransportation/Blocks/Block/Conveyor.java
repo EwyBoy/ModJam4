@@ -1,13 +1,19 @@
 package com.modjam.terrifictransportation.Blocks.Block;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.IChatComponent;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
@@ -16,20 +22,23 @@ import net.minecraft.world.World;
 
 import com.modjam.terrifictransportation.Blocks.Technical.BlockInfo;
 import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
+import com.modjam.terrifictransportation.Items.Item.Wrench;
 import com.modjam.terrifictransportation.Texture.TextureHandler;
+import com.modjam.terrifictransportation.tileentitys.ConveyorTile;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 
-public class Conveyor extends Block {
+public class Conveyor extends BlockContainer {
 
     public Conveyor() {
         super(Material.iron);
         setHardness(1F);
         setCreativeTab(TTCreativeTabs.ClockworkBlockTab);
     }
-
+  
+   
     @Override
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {
 
@@ -53,7 +62,37 @@ public class Conveyor extends Block {
         }
 
         if (!entity.isSneaking()) {
-            entity.addVelocity(0, 0, entitySpeed);
+            entity.addVelocity(0, 0, -entitySpeed);
+        }
+        if(entity instanceof EntityItem){
+        
+        	EntityItem et = (EntityItem) entity;
+        if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
+        	
+        	ConveyorTile c = (ConveyorTile) world.getTileEntity(x, y, z);
+        	if(c.getConveyorType() == "Export Mode"){
+        		
+        		Block router = com.modjam.terrifictransportation.Blocks.Technical.Blocks.Router;
+        		if(world.getTileEntity(x, y, z -1) instanceof IInventory || world.getBlock(x, y, z) == router){
+        			IInventory inv = (IInventory) world.getTileEntity(x, y, z -1);
+        			
+        			
+        		for(int i = 0; i < inv.getSizeInventory(); i++){
+        			if(inv.getStackInSlot(i) == null){
+        				inv.setInventorySlotContents(i, et.getEntityItem());
+        				entity.setDead();
+        				
+        				return;
+        			}else{
+        				
+        				
+        				
+        			}
+        		}
+        		}
+        	}
+        	
+        }
         }
     }
 
@@ -106,7 +145,7 @@ public class Conveyor extends Block {
     @SideOnly(Side.CLIENT)
     private IIcon TextureSideX;
     private IIcon TextureSideZ;
-
+ 
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister register) {
@@ -114,7 +153,29 @@ public class Conveyor extends Block {
         TextureSideZ = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureSidesZ);
         TextureTop = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureTop);
     }
+    @Override
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer entityplayer, int par6, float par7, float par8, float par9) {
+   if(!world.isRemote){
+    	Item equipped = entityplayer.getCurrentEquippedItem() != null ? entityplayer.getCurrentEquippedItem().getItem() : null;
+    if (equipped instanceof Wrench){
 
+    	Wrench c = (Wrench) equipped;
+    	if(c.getWrenchTypeID() == 2){
+    		
+    	if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
+
+    		ConveyorTile cs = (ConveyorTile) world.getTileEntity(x, y, z);
+    		cs.changeConveyor(world, entityplayer);
+    		entityplayer.addChatComponentMessage(new ChatComponentText("This Conveyor is now in" + cs.getConveyorType()));
+    	}
+    	}
+    }else{
+    	
+    }
+    }
+	return true;
+    
+    }
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side , int meta) {
@@ -131,22 +192,41 @@ public class Conveyor extends Block {
     }
 @Override
     public void onNeighborChange(IBlockAccess world, int x, int y, int z, int tileX, int tileY, int tileZ){
-	Block router = com.modjam.terrifictransportation.Blocks.Technical.Blocks.Router;
-if(world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x, y, z) == router)){
-	IInventory inv = (IInventory) world.getTileEntity(x, y, z +2);
-for(int i = 0; i < inv.getSizeInventory(); i++){
-	if(inv.getStackInSlot(i) == null){
-		
-	}else{
-		world.getTileEntity(x, y, z +1).getWorldObj().spawnEntityInWorld(new EntityItem(world.getTileEntity(x, y, z + 1).getWorldObj(), x +1, y, z, inv.getStackInSlot(i)));
-		inv.decrStackSize(i, 0);
+if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
+	ConveyorTile c = (ConveyorTile) world.getTileEntity(x, y, z);
+	if(c.getConveyorTypeID() == 1){
+		Block router = com.modjam.terrifictransportation.Blocks.Technical.Blocks.Router;
+		if(world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x, y, z) == router)){
+			IInventory inv = (IInventory) world.getTileEntity(x, y, z + 1);
+			
+			
+		for(int i = 0; i < inv.getSizeInventory(); i++){
+			if(inv.getStackInSlot(i) == null){
+				
+			}else{
+				world.getTileEntity(x, y, z +1).getWorldObj().spawnEntityInWorld(new EntityItem(world.getTileEntity(x, y, z + 1).getWorldObj(), x +1, y, z, inv.getStackInSlot(i).copy()));
+				inv.setInventorySlotContents(i, null);
+				
+				
+			}
+		}
+		}
 	}
+	
 }
+	
+
 }
 
+@Override
+public TileEntity createNewTileEntity(World var1, int var2) {
+	// TODO Auto-generated method stub
+	return new ConveyorTile();
 }
 		
 
 	
+
+
 
 }

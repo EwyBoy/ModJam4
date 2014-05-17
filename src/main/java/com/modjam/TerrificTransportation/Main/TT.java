@@ -33,6 +33,7 @@ public class TT
         proxy.initRenders();
         KeyBindings.shiftIsPressed();
         CraftingRecipes.init();
+        
     }
 
     @Mod.EventHandler
