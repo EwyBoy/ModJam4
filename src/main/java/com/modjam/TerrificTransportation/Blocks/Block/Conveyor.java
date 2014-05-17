@@ -10,6 +10,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.ChatComponentText;
@@ -22,6 +23,7 @@ import net.minecraft.world.World;
 
 import com.modjam.terrifictransportation.Blocks.Technical.BlockInfo;
 import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
+import com.modjam.terrifictransportation.Items.Item.Modules;
 import com.modjam.terrifictransportation.Items.Item.Wrench;
 import com.modjam.terrifictransportation.Texture.TextureHandler;
 import com.modjam.terrifictransportation.tileentitys.ConveyorTile;
@@ -171,6 +173,22 @@ public class Conveyor extends BlockContainer {
     	}
     }else{
     	
+    }
+    if(equipped instanceof com.modjam.terrifictransportation.Items.Item.Modules){
+    	com.modjam.terrifictransportation.Items.Item.Modules module = (Modules) equipped;
+    	ItemStack m = entityplayer.getCurrentEquippedItem();
+    	if(module.getDamage(m) == 0){
+    		if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
+
+        		ConveyorTile cs = (ConveyorTile) world.getTileEntity(x, y, z);
+    		if(cs.installedModules.size() == 4){
+    			entityplayer.addChatMessage(new ChatComponentText("This Conveyor has no More Space!"));
+    		}else{
+    			cs.installedModules.add(com.modjam.terrifictransportation.util.Modules.SPEED);
+    			this.geti
+    		}
+    		}
+    	}
     }
     }
 	return true;

@@ -8,13 +8,11 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-import com.modjam.terrifictransportation.Items.Item.Modules;
-
 public class ConveyorTile extends TileEntity {
 
 	
 	
-	public List<Modules> installedModules = new ArrayList<Modules>();
+	public List<com.modjam.terrifictransportation.util.Modules> installedModules = new ArrayList<com.modjam.terrifictransportation.util.Modules>();
 	 private String ConveyorType = "Normal";
 	    private int ConveyorTypeID = 0;
 
@@ -63,12 +61,14 @@ public class ConveyorTile extends TileEntity {
 	    public void writeToNBT(NBTTagCompound nbt) {
 	    	nbt.setString("conveyorType", ConveyorType);
 	    	nbt.setInteger("conveyorTypeID", ConveyorTypeID);
-	    }
+	   
+	 }
 	    
 	    @Override
 	    public void readFromNBT(NBTTagCompound nbt) {
 	    	setConveyorType(nbt.getString("conveyorType"));
 	    	setConveyorTypeID(nbt.getInteger("conveyorTypeID"));
+	    	
 	    }
     
 }

@@ -8,11 +8,13 @@ import com.modjam.terrifictransportation.Info.ModInfo;
 import com.modjam.terrifictransportation.Items.Technical.Items;
 import com.modjam.terrifictransportation.KeyBindings.KeyBindings;
 import com.modjam.terrifictransportation.Network.CommonProxy;
+import com.modjam.terrifictransportation.Network.Packets.PacketPipeline;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import net.minecraft.creativetab.CreativeTabs;
 
 @Mod(modid = ModInfo.ModID, name = ModInfo.ModName, version = ModInfo.ModVersion)
 
@@ -23,7 +25,8 @@ public class TT
 
     @SidedProxy(modId = ModInfo.ModID, clientSide = "com.modjam.terrifictransportation.Network.ClientProxy", serverSide = "com.modjam.terrifictransportation.Network.CommonProxy")
     public static CommonProxy proxy;
-
+    public static final PacketPipeline packetPipeline = new PacketPipeline();
+    
     @Mod.EventHandler
     public void PreInit (FMLPreInitializationEvent event)
     {
@@ -39,11 +42,11 @@ public class TT
     @Mod.EventHandler
     public void load (FMLInitializationEvent event)
     {
-
+    	  packetPipeline.initialise();
     }
 
     @Mod.EventHandler
-    public void ModsLoaded (FMLPreInitializationEvent event){
-
+    public void ModsLoaded (FMLPostInitializationEvent event){
+    	 packetPipeline.postInitialise();
     }
 }
