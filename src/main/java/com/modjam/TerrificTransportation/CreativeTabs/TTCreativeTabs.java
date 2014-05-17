@@ -11,9 +11,7 @@ public class TTCreativeTabs {
     public static void init() {
         addCreativeTabs();
     }
-    public static void addCreativeTabs() {
-
-    }
+    public static void addCreativeTabs() {}
 
         public static CreativeTabs ClockworkBlockTab = new CreativeTabs ("Clockwork Block") {
             public ItemStack getIconItemStack() {
@@ -33,6 +31,4 @@ public class TTCreativeTabs {
                 return null;
             }
         };
-
-
 }

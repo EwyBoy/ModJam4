@@ -2,6 +2,7 @@ package com.modjam.terrifictransportation.Main;
 
 
 import com.modjam.terrifictransportation.Blocks.Technical.Blocks;
+import com.modjam.terrifictransportation.Crafting.CraftingRecipes;
 import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
 import com.modjam.terrifictransportation.Info.ModInfo;
 import com.modjam.terrifictransportation.Items.Technical.Items;
@@ -11,6 +12,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.creativetab.CreativeTabs;
 
 @Mod(modid = ModInfo.ModID, name = ModInfo.ModName, version = ModInfo.ModVersion)
 
@@ -30,6 +32,7 @@ public class TT
         TTCreativeTabs.init();
         proxy.initRenders();
         KeyBindings.shiftIsPressed();
+        CraftingRecipes.init();
     }
 
     @Mod.EventHandler

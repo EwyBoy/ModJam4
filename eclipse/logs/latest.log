@@ -1,38 +1,28 @@
-[01:47:10] [main/INFO]: Setting user: ForgeDevName
-[01:47:11] [Client thread/INFO]: LWJGL Version: 2.9.0
-[01:47:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
-[01:47:16] [Sound Library Loader/INFO]: Sound engine started
-[01:47:16] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[01:47:16] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[01:47:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
-[01:47:16] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[01:47:16] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[01:47:17] [Sound Library Loader/INFO]: Sound engine started
-[01:47:18] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[01:47:20] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[01:47:20] [Server thread/INFO]: Generating keypair
-[01:47:21] [Server thread/INFO]: Preparing start region for level 0
-[01:47:22] [Server thread/INFO]: ForgeDevName[local:E:23ca8639] logged in with entity id 342 at (71.24279443063321, 65.47613542697385, 312.82692336005994)
-[01:47:22] [Server thread/INFO]: ForgeDevName joined the game
-[01:49:59] [Client thread/INFO]: [CHAT] /gamemode, /give, /scoreboard, /tp, /kill, /spreadplayers, /xp, /difficulty, /debug, /gamerule, /clear, /time, /help, /defaultgamemode, /weather, /me, /tell, /publish, /achievement, /tellraw, /testforblock, /seed, /playsound, /forge, /msg, /spawnpoint, /setblock, /w, /toggledownfall, /effect, /say, /setworldspawn, /summon, /testfor, /?, /enchant
-[01:50:03] [Server thread/INFO]: [ForgeDevName: Toggled downfall]
-[01:50:03] [Client thread/INFO]: [CHAT] Toggled downfall
-[01:51:57] [Server thread/INFO]: Saving and pausing game...
-[01:51:57] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:51:57] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:51:57] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:52:01] [Client thread/INFO]: [CHAT] Saved screenshot as 2014-05-16_01.52.01.png
-[01:52:26] [Server thread/INFO]: [ForgeDevName: Set the time to 2]
-[01:52:26] [Client thread/INFO]: [CHAT] Set the time to 2
-[01:52:35] [Client thread/INFO]: [CHAT] Saved screenshot as 2014-05-16_01.52.35.png
-[01:52:36] [Server thread/INFO]: Saving and pausing game...
-[01:52:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:52:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:52:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:52:37] [Server thread/INFO]: Stopping server
-[01:52:37] [Server thread/INFO]: Saving players
-[01:52:37] [Server thread/INFO]: Saving worlds
-[01:52:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[01:52:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[01:52:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[01:52:38] [Client thread/INFO]: Stopping!
+[02:42:43] [main/INFO]: Setting user: ForgeDevName
+[02:42:44] [Client thread/INFO]: LWJGL Version: 2.9.0
+[02:42:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
+[02:42:51] [Sound Library Loader/INFO]: Sound engine started
+[02:42:52] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[02:42:52] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[02:42:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Terrific Transportation
+[02:42:52] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[02:42:53] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[02:42:54] [Sound Library Loader/INFO]: Sound engine started
+[02:42:54] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[02:42:56] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[02:42:56] [Server thread/INFO]: Generating keypair
+[02:42:57] [Server thread/INFO]: Preparing start region for level 0
+[02:42:58] [Server thread/INFO]: Preparing spawn area: 88%
+[02:42:58] [Server thread/INFO]: ForgeDevName[local:E:92f9478d] logged in with entity id 340 at (28.459440124359336, 67.0, 291.34715538743126)
+[02:42:58] [Server thread/INFO]: ForgeDevName joined the game
+[02:45:49] [Server thread/INFO]: Saving and pausing game...
+[02:45:49] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[02:45:49] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[02:45:49] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[02:45:50] [Server thread/INFO]: Stopping server
+[02:45:50] [Server thread/INFO]: Saving players
+[02:45:50] [Server thread/INFO]: Saving worlds
+[02:45:50] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[02:45:50] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[02:45:50] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[02:46:01] [Client thread/INFO]: Stopping!
