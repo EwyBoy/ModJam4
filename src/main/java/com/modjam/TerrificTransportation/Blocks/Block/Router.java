@@ -31,7 +31,7 @@ public class Router extends Block {
 
     @Override
     public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        setBlockBounds(0.15F, 0F, 0.15F, 0.85F, 0.85F, 0.85F);
+        setBlockBounds(0.20F, 0F, 0.20F, 0.80F, 0.80F, 0.80F);
     }
 
     @Override
@@ -54,7 +54,7 @@ public class Router extends Block {
 
     @Override
     public void setBlockBoundsForItemRender() {
-        setBlockBounds(0.15F, 0F, 0.15F, 0.85F, 0.85F, 0.85F);
+        setBlockBounds(0.20F, 0F, 0.20F, 0.80F, 0.80F, 0.80F);
     }
 
     @Override

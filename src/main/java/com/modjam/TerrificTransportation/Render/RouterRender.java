@@ -64,44 +64,51 @@ public class RouterRender implements ISimpleBlockRenderingHandler {
 
     private void defaultRender(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
-        block.setBlockBounds(0.15F, 0F, 0.15F, 0.85F, 0.85F, 0.85F);
+        block.setBlockBounds(0.20F, 0F, 0.20F, 0.80F, 0.80F, 0.80F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
     }
 
     private void renderSidePosX(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
-        block.setBlockBounds(0.85F, 0.30F, 0.25F, 1F, 0.70F, 0.75F);
+        block.setBlockBounds(0.75F, 0.20F, 0.30F, 1F, 0.60F, 0.70F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
     }
 
     private void renderSideNegX(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
-        block.setBlockBounds(0F, 0.30F, 0.25F, 0.25F, 0.70F, 0.75F);
+        block.setBlockBounds(0.25F, 0.20F, 0.70F, 0F, 0.60F, 0.30F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
     }
 
     private void renderSidePosZ(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
-        block.setBlockBounds(0.25F, 0.30F, 0.85F, 0.75F, 0.70F, 1F);
+        block.setBlockBounds(0.25F, 0.20F, 0.75F, 0.75F, 0.60F, 1F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
     }
 
     private void renderSideNegZ(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
 
-        block.setBlockBounds(0.25F, 0.30F, 0F, 0.75F, 0.70F, 0.15F);
+        block.setBlockBounds(0.25F, 0.20F, 0F, 0.75F, 0.60F, 0.25F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
     }
 
     private void renderSideY(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
+        Block conveyor = com.modjam.terrifictransportation.Blocks.Technical.Blocks.Conveyor;
 
-        block.setBlockBounds(0.25F, 0.30F, 0.25F, 0.75F, 1F, 0.75F);
-        renderer.setRenderBoundsFromBlock(block);
-        renderer.renderStandardBlock(block, x, y ,z);
+        if (world.getBlock(x, y + 1, z) == conveyor) {
+            block.setBlockBounds(0.25F, 0.30F, 0.25F, 0.75F, 1F, 0.75F);
+            renderer.setRenderBoundsFromBlock(block);
+            renderer.renderStandardBlock(block, x, y ,z);
+        } else {
+            block.setBlockBounds(0.30F, 0.30F, 0.30F, 0.70F, 1F, 0.70F);
+            renderer.setRenderBoundsFromBlock(block);
+            renderer.renderStandardBlock(block, x, y ,z);
+        }
     }
 
     @Override

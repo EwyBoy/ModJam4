@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbba15a-afea-4b9b-aa37-d7212d1a140d" name="Default" comment="Push to Rush">
-      <change type="DELETED" beforePath="C:\Users\Eivind\Desktop\ModJam4\src\main\resources\assets\terrifictransportation\textures\blocks\Module.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Eivind\Desktop\ModJam4\src\main\resources\assets\terrifictransportation\textures\blocks\ModuleCenter.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Eivind\Desktop\ModJam4\src\main\resources\assets\terrifictransportation\textures\blocks\ModuleSpeed.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-1.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-1.log.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-2.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-2.log.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-3.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-3.log.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-4.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-4.log.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-5.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-5.log.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-6.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-6.log.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-16-7.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-16-7.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-17-1.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-17-1.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-17-2.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-17-2.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-17-3.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-17-3.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-17-4.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-17-4.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-17-5.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-17-5.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-17-6.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-17-6.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-05-17-7.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-05-17-7.log.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/players/ForgeDevName.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/players/ForgeDevName.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/screenshots/Thumbs.db" afterPath="$PROJECT_DIR$/eclipse/screenshots/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/textures/items/Thumbs.db" afterPath="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/textures/items/Thumbs.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/level.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/level.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/level.dat_old" afterPath="$PROJECT_DIR$/eclipse/saves/New World/level.dat_old" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/region/r.-1.0.mca" afterPath="$PROJECT_DIR$/eclipse/saves/New World/region/r.-1.0.mca" />
@@ -26,14 +21,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/DIM-1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/DIM-1/data/villages.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/DIM1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/DIM1/data/villages.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/New World/data/villages.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/New World/stats/ForgeDevName.json" afterPath="$PROJECT_DIR$/eclipse/saves/New World/stats/ForgeDevName.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ModJam4.iws" afterPath="$PROJECT_DIR$/ModJam4.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java" afterPath="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" />
@@ -105,98 +96,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BlockInfo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/BlockInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="57" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemInfo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Blocks.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/Blocks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Items.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/Items.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RouterRender.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2618">
+            <state line="17" column="5" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6115#6116#0" expanded="true" />
-                <element signature="e#6140#6141#0" expanded="true" />
+                <element signature="method#renderInventoryBlock#0;class#RouterRender#0" expanded="false" />
+                <element signature="method#defaultRender#0;class#RouterRender#0" expanded="false" />
+                <element signature="method#renderSidePosX#0;class#RouterRender#0" expanded="false" />
+                <element signature="method#renderSideNegX#0;class#RouterRender#0" expanded="false" />
+                <element signature="method#renderSidePosZ#0;class#RouterRender#0" expanded="false" />
+                <element signature="method#renderSideNegZ#0;class#RouterRender#0" expanded="false" />
+                <element signature="method#renderSideY#0;class#RouterRender#0" expanded="false" />
+                <element signature="method#renderWorldBlock#0;class#RouterRender#0" expanded="false" />
+                <element signature="e#6487#6488#0" expanded="true" />
+                <element signature="e#6512#6513#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Router.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Router.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="1581">
+            <state line="56" column="62" selection-start="2008" selection-end="2008" vertical-scroll-proportion="1.3005464" vertical-offset="0" max-vertical-offset="1581">
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CraftingRecipes.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="119" selection-start="886" selection-end="886" vertical-scroll-proportion="0.43202034" vertical-offset="0" max-vertical-offset="787">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CraftingComponents.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Item/CraftingComponents.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="46" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="833">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConveyorRenderer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="65" selection-start="7617" selection-end="7617" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="2397">
-              <folding>
-                <element signature="method#conveyorDirZ#0;class#ConveyorRenderer#0" expanded="false" />
-                <element signature="method#conveyorDirX#0;class#ConveyorRenderer#0" expanded="false" />
-                <element signature="method#conveyorInventoryConnectPosZ#0;class#ConveyorRenderer#0" expanded="false" />
-                <element signature="method#conveyorInventoryConnectNegZ#0;class#ConveyorRenderer#0" expanded="false" />
-                <element signature="method#conveyorOverInventory#0;class#ConveyorRenderer#0" expanded="false" />
-                <element signature="e#9687#9688#0" expanded="true" />
-                <element signature="e#9712#9713#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -256,11 +182,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/Blocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Network/ClientProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/ConveyorRenderer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang" />
         <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java" />
       </list>
     </option>
   </component>
@@ -736,7 +662,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18477103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.122030236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18142548" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -799,18 +725,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/ChangeLogs/Pre Alpha 0.0.0">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Conveyor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="31" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="2397">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/CreativeTabs/TTCreativeTabs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="53" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="748">
@@ -1050,13 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/Blocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Conveyor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="124" column="28" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="1385" max-vertical-offset="2108">
@@ -1079,57 +986,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/cpw/mods/fml/common/registry/GameRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2618">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6115#6116#0" expanded="true" />
-            <element signature="e#6140#6141#0" expanded="true" />
-          </folding>
+        <state line="219" column="37" selection-start="8355" selection-end="8355" vertical-scroll-proportion="1.8066666" vertical-offset="2060" max-vertical-offset="6290">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/Items.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/item/crafting/CraftingManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+        <state line="174" column="42" selection-start="16871" selection-end="16871" vertical-scroll-proportion="-1.8577778" vertical-offset="3539" max-vertical-offset="5661">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/ItemInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+        <state line="19" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.44125682" vertical-offset="0" max-vertical-offset="732">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Item/CraftingComponents.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Technical/Blocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="833">
+        <state line="17" column="0" selection-start="469" selection-end="469" vertical-scroll-proportion="0.3251366" vertical-offset="0" max-vertical-offset="732">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="106" selection-end="106" vertical-scroll-proportion="0.15120712" vertical-offset="0" max-vertical-offset="787">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="1581">
+        <state line="41" column="8" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.9521858" vertical-offset="0" max-vertical-offset="1003">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Crafting/CraftingRecipes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/terrifictransportation/lang/en_US.lang">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="119" selection-start="886" selection-end="886" vertical-scroll-proportion="0.43202034" vertical-offset="0" max-vertical-offset="787">
+        <state line="7" column="31" selection-start="106" selection-end="106" vertical-scroll-proportion="0.1625683" vertical-offset="0" max-vertical-offset="732">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Technical/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.3251366" vertical-offset="0" max-vertical-offset="732">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Items/Item/CraftingComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="46" selection-start="615" selection-end="615" vertical-scroll-proportion="0.030054646" vertical-offset="46" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Render/RouterRender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#renderInventoryBlock#0;class#RouterRender#0" expanded="false" />
+            <element signature="method#defaultRender#0;class#RouterRender#0" expanded="false" />
+            <element signature="method#renderSidePosX#0;class#RouterRender#0" expanded="false" />
+            <element signature="method#renderSideNegX#0;class#RouterRender#0" expanded="false" />
+            <element signature="method#renderSidePosZ#0;class#RouterRender#0" expanded="false" />
+            <element signature="method#renderSideNegZ#0;class#RouterRender#0" expanded="false" />
+            <element signature="method#renderSideY#0;class#RouterRender#0" expanded="false" />
+            <element signature="method#renderWorldBlock#0;class#RouterRender#0" expanded="false" />
+            <element signature="e#6487#6488#0" expanded="true" />
+            <element signature="e#6512#6513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modjam/terrifictransportation/Blocks/Block/Router.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="62" selection-start="2008" selection-end="2008" vertical-scroll-proportion="1.3005464" vertical-offset="0" max-vertical-offset="1581">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
