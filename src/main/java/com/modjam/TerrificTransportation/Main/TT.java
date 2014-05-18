@@ -1,6 +1,8 @@
 package com.modjam.terrifictransportation.Main;
 
 
+import net.minecraft.util.ResourceLocation;
+
 import com.modjam.terrifictransportation.Blocks.Technical.Blocks;
 import com.modjam.terrifictransportation.Crafting.CraftingRecipes;
 import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
@@ -9,6 +11,7 @@ import com.modjam.terrifictransportation.Items.Technical.Items;
 import com.modjam.terrifictransportation.KeyBindings.KeyBindings;
 import com.modjam.terrifictransportation.Network.Proxies.CommonProxy;
 import com.modjam.terrifictransportation.Network.Packets.PacketPipeline;
+import com.modjam.terrifictransportation.Texture.TextureHandler;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -36,6 +39,7 @@ public class TT
         proxy.initRenders();
         KeyBindings.shiftIsPressed();
         CraftingRecipes.init();
+        System.out.print(new ResourceLocation(TextureHandler.texturePath + ":" + "Conveyor.tcn").getResourceDomain());
     }
 
     @Mod.EventHandler
