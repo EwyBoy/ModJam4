@@ -249,6 +249,9 @@ public TileEntity createNewTileEntity(World var1, int var2) {
 		 int dir = MathHelper.floor_double((double)((player.rotationYaw * 4F) / 360F) + 0.5D) & 3;
 	        world.setBlockMetadataWithNotify(x, y, z, dir, 0);
 	        System.out.print(dir);
+	        if(world.getTileEntity(x, y +1, z + 1)instanceof ConveyorTile){
+	        	this.setBlockBounds(0F, 0F, 0F, 1F, 0.35F, 1F);
+	        }
 	}
 
 

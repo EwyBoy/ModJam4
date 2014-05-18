@@ -58,14 +58,13 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
             int dir = world.getBlockMetadata(x, y, z);
       
             GL11.glPushMatrix();
-            GL11.glRotatef(185F, 0.0F, 0.0F, 1.0F);
+            GL11.glRotatef(181F, 0.0F, 0.0F, 1.0F);
             GL11.glTranslatef(-0.5F, -1.5F, 0.5F);
             GL11.glRotatef(dir * (-90F), 0F, 1F, 0F);
             if(world.getTileEntity(x, y +1, z + 1)instanceof ConveyorTile){
                 
-        		GL11.glRotatef(-220F, 0F, 0F, 1F);
-        		GL11.glRotatef(-180F, 1F, 0F,0F);
-        		GL11.glTranslatef(0.4F, -0.93F, 0F);
+        		
+        	
             }
             
             if(world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper){
