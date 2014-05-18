@@ -180,7 +180,52 @@ entitySpeed = entitySpeed * howmanyspeed;
 
     	Wrench c = (Wrench) equipped;
     	if(c.getWrenchTypeID() == 2){
-    		
+    		if(entityplayer.isSneaking()){
+    			if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
+
+    	    		ConveyorTile cs = (ConveyorTile) world.getTileEntity(x, y, z);
+    			if(cs.installedModules.size() ==4){
+    				if(cs.installedModules.get(4) == com.modjam.terrifictransportation.util.Modules.SPEED){
+    					entityplayer.inventory.addItemStackToInventory(new ItemStack(new Modules()));
+    					cs.installedModules.remove(4);
+    				}
+    				if(cs.installedModules.get(4) == com.modjam.terrifictransportation.util.Modules.CENTER){
+    					entityplayer.inventory.addItemStackToInventory(new ItemStack(new Modules(), 1));
+    					cs.installedModules.remove(4);
+    				}
+    			}
+    			if(cs.installedModules.size() ==3){
+    				if(cs.installedModules.get(3) == com.modjam.terrifictransportation.util.Modules.SPEED){
+    					entityplayer.inventory.addItemStackToInventory(new ItemStack(new Modules()));
+    					cs.installedModules.remove(3);
+    				}
+    				if(cs.installedModules.get(3) == com.modjam.terrifictransportation.util.Modules.CENTER){
+    					entityplayer.inventory.addItemStackToInventory(new ItemStack(new Modules(), 1));
+    					cs.installedModules.remove(3);
+    				}
+    			}
+    			if(cs.installedModules.size() ==2){
+    				if(cs.installedModules.get(2) == com.modjam.terrifictransportation.util.Modules.SPEED){
+    					entityplayer.inventory.addItemStackToInventory(new ItemStack(new Modules()));
+    					cs.installedModules.remove(2);
+    				}
+    				if(cs.installedModules.get(2) == com.modjam.terrifictransportation.util.Modules.CENTER){
+    					entityplayer.inventory.addItemStackToInventory(new ItemStack(new Modules(), 1));
+    					cs.installedModules.remove(2);
+    				}
+    			}
+    			if(cs.installedModules.size() ==1){
+    				if(cs.installedModules.get(1) == com.modjam.terrifictransportation.util.Modules.SPEED){
+    					entityplayer.inventory.addItemStackToInventory(new ItemStack(new Modules()));
+    					cs.installedModules.remove(1);
+    				}
+    				if(cs.installedModules.get(1) == com.modjam.terrifictransportation.util.Modules.CENTER){
+    					entityplayer.inventory.addItemStackToInventory(new ItemStack(new Modules(), 1));
+    					cs.installedModules.remove(1);
+    				}
+    			}
+    			}
+    		}
     	if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
 
     		ConveyorTile cs = (ConveyorTile) world.getTileEntity(x, y, z);
@@ -215,6 +260,7 @@ entitySpeed = entitySpeed * howmanyspeed;
     			entityplayer.addChatMessage(new ChatComponentText("This Conveyor has no more Space!"));
     		}else{
     			cs.installedModules.add(com.modjam.terrifictransportation.util.Modules.SPEED);
+    			entityplayer.inventory.getCurrentItem().stackSize = entityplayer.inventory.getCurrentItem().stackSize--;
     		}
     		}
     	}
