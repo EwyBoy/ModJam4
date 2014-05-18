@@ -44,7 +44,12 @@ public class Conveyor extends BlockContainer {
    
     @Override
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {
-
+if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
+	ConveyorTile cd = (ConveyorTile) world.getTileEntity(x, y, z);
+	if(cd.installedModules.contains(com.modjam.terrifictransportation.util.Modules.SPEED)){
+		
+	}
+}
         double entitySpeed = 0.025;
         int meta = world.getBlockMetadata(x, y, z);
         int xAxis[] = {0,1,0,-1};
@@ -181,7 +186,7 @@ public class Conveyor extends BlockContainer {
     		if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
 
         		ConveyorTile cs = (ConveyorTile) world.getTileEntity(x, y, z);
-    		if(cs.installedModules.size() == 4){
+    		if(cs.installedModules.size() == 3){
     			entityplayer.addChatMessage(new ChatComponentText("This Conveyor has no more Space!"));
     		}else{
     			cs.installedModules.add(com.modjam.terrifictransportation.util.Modules.SPEED);
