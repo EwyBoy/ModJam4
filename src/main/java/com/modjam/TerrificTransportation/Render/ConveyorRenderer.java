@@ -72,8 +72,8 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
             }else{
             	Coveyor c = new Coveyor();
             	c.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
-            	if(world.getTileEntity(x, y + 1, z + 1)instanceof ConveyorTile){
-                	GL11.glRotatef(90F, 0F, 0F, 1F);
+            	if(world.getTileEntity(x, (int) (y + 1.350), z + 1)instanceof ConveyorTile || world.getTileEntity(x, y + 1, z - 1)instanceof ConveyorTile){
+                	GL11.glRotatef(90F, 0F, 1F, 0F);
                 }
             }
             

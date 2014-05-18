@@ -84,10 +84,14 @@ entitySpeed = entitySpeed * howmanyspeed;
             if (world.getBlock(x, y - 1, z) == Blocks.ice || (world.getBlock(x, y - 1, z) == Blocks.packed_ice ||(world.getBlock(x, y - 1, z) == Blocks.soul_sand ))) {
                 entity.addVelocity(0,0,0);
             } else {
-            	if(world.getBlockMetadata(x, y, z) == 3){
+            	if(world.getBlockMetadata(x, y, z) == 3 || world.getBlockMetadata(x, y, z) == 1){
             		entity.addVelocity(0, 0, -entitySpeed);
             	}else if (world.getBlockMetadata(x, y, z) == 0){
             		entity.addVelocity(- entitySpeed, 0, 0);
+            	}else if(world.getBlockMetadata(x, y, z) == 1){
+            		entity.addVelocity(0,  0, +entitySpeed);
+            	}else if(world.getBlockMetadata(x, y, z) == 2){
+            		entity.addVelocity(+entitySpeed, 0, 0);
             	}
                 
                 entity.stepHeight = 1F;
