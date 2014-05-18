@@ -84,7 +84,7 @@ entitySpeed = entitySpeed * howmanyspeed;
             if (world.getBlock(x, y - 1, z) == Blocks.ice || (world.getBlock(x, y - 1, z) == Blocks.packed_ice ||(world.getBlock(x, y - 1, z) == Blocks.soul_sand ))) {
                 entity.addVelocity(0,0,0);
             } else {
-            	if(world.getBlockMetadata(x, y, z) == 3 || world.getBlockMetadata(x, y, z) == 1){
+            	if(world.getBlockMetadata(x, y, z) == 3 ){
             		entity.addVelocity(0, 0, -entitySpeed);
             	}else if (world.getBlockMetadata(x, y, z) == 0){
             		entity.addVelocity(- entitySpeed, 0, 0);
@@ -187,6 +187,19 @@ entitySpeed = entitySpeed * howmanyspeed;
     		cs.changeConveyor(world, entityplayer);
     		entityplayer.addChatComponentMessage(new ChatComponentText("This Conveyor is now set to " + cs.getConveyorType()));
     	}
+    	}else if(c.getWrenchTypeID() == 1){
+    		if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
+    			ConveyorTile cs = (ConveyorTile) world.getTileEntity(x, y, z);
+    			if(world.getBlockMetadata(x, y, z) == 0){
+    				world.setBlockMetadataWithNotify(x, y, z, 1,3);
+    			}else if(cs.getBlockMetadata() == 1){
+    				world.setBlockMetadataWithNotify(x, y, z, 2,3);
+    			}else if(cs.getBlockMetadata() == 2){
+    				world.setBlockMetadataWithNotify(x, y, z, 3,3);
+    			}else if(cs.getBlockMetadata() == 3){
+    				world.setBlockMetadataWithNotify(x, y, z, 0,3);
+    			}
+    		}
     	}
     }else{
     	
@@ -242,8 +255,17 @@ public TileEntity createNewTileEntity(World var1, int var2) {
 	// TODO Auto-generated method stub
 	return new ConveyorTile();
 }
-		
-
+		@Override
+public AxisAlignedBB getCollisionBoundingBoxFromPool(World p_149668_1_, int p_149668_2_, int p_149668_3_, int p_149668_4_)
+{
+    return null;
+}
+		@Override
+		 public MovingObjectPosition collisionRayTrace(World p_149731_1_, int p_149731_2_, int p_149731_3_, int p_149731_4_, Vec3 p_149731_5_, Vec3 p_149731_6_)
+		    {
+		        this.setBlockBoundsBasedOnState(p_149731_1_, p_149731_2_, p_149731_3_, p_149731_4_);
+		        return super.collisionRayTrace(p_149731_1_, p_149731_2_, p_149731_3_, p_149731_4_, p_149731_5_, p_149731_6_);
+		    }
 	@Override 
 	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack item){
 		 int dir = MathHelper.floor_double((double)((player.rotationYaw * 4F) / 360F) + 0.5D) & 3;
@@ -251,6 +273,8 @@ public TileEntity createNewTileEntity(World var1, int var2) {
 	        System.out.print(dir);
 	        if(world.getTileEntity(x, y +1, z + 1)instanceof ConveyorTile){
 	        	this.setBlockBounds(0F, 0F, 0F, 1F, 0.35F, 1F);
+
+
 	        }
 	}
 
