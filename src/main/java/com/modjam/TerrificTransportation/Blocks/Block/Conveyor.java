@@ -48,14 +48,14 @@ if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
 	ConveyorTile cd = (ConveyorTile) world.getTileEntity(x, y, z);
 	if(cd.installedModules.contains(com.modjam.terrifictransportation.util.Modules.SPEED)){
 		
-		if(cd.installedModules.get(1).equals(com.modjam.terrifictransportation.util.Modules.SPEED)){
+		if(cd.installedModules.get(1).equals(com.modjam.terrifictransportation.util.Modules.SPEED) && cd.installedModules.size() == 1){
 			howmanyspeed++;
 		}
 		
-		if(cd.installedModules.get(2).equals(com.modjam.terrifictransportation.util.Modules.SPEED)){
+		if(cd.installedModules.get(2).equals(com.modjam.terrifictransportation.util.Modules.SPEED)&& cd.installedModules.size() == 2){
 			howmanyspeed++;
 		}
-		if(cd.installedModules.get(3).equals(com.modjam.terrifictransportation.util.Modules.SPEED)){
+		if(cd.installedModules.get(3).equals(com.modjam.terrifictransportation.util.Modules.SPEED)&& cd.installedModules.size() == 3){
 			howmanyspeed++;
 		}
 		
