@@ -58,9 +58,15 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
             int dir = world.getBlockMetadata(x, y, z);
       
             GL11.glPushMatrix();
-            GL11.glRotatef(180F, 0.0F, 0.0F, 1.0F);
+            GL11.glRotatef(185F, 0.0F, 0.0F, 1.0F);
             GL11.glTranslatef(-0.5F, -1.5F, 0.5F);
             GL11.glRotatef(dir * (-90F), 0F, 1F, 0F);
+            if(world.getTileEntity(x, y +1, z + 1)instanceof ConveyorTile){
+                
+        		GL11.glRotatef(-220F, 0F, 0F, 1F);
+        		GL11.glRotatef(-180F, 1F, 0F,0F);
+        		GL11.glTranslatef(0.4F, -0.93F, 0F);
+            }
             
             if(world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper){
            	CoveyorHollow ch = new CoveyorHollow();
@@ -72,13 +78,11 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
             }else{
             	Coveyor c = new Coveyor();
             	c.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
-            	if(world.getTileEntity(x, (int) (y + 1.350), z + 1)instanceof ConveyorTile || world.getTileEntity(x, y + 1, z - 1)instanceof ConveyorTile){
-                	GL11.glRotatef(90F, 0F, 1F, 0F);
-                }
+            	
             }
             
             }
-        
+            
             Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(TextureHandler.texturePath + ":textures/blocks/ConveyorModelUiversal.png"));
             GL11.glPopMatrix();
         }
