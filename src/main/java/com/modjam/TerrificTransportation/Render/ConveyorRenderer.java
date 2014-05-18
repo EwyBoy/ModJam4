@@ -71,9 +71,14 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
             }else{
             	Coveyor c = new Coveyor();
             	c.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
-            	this.bindTexture(new ResourceLocation(TextureHandler.texturePath + ":/textures/blocks/ConveyorModelUiversal.png"));
+            	
+            }
+            if(world.getTileEntity(x, y + 1, z + 1)instanceof ConveyorTile){
+            	GL11.glRotatef(90F, 0F, 1F, 0F);
             }
             }
+        
+            this.bindTexture(new ResourceLocation(TextureHandler.texturePath + ":/textures/blocks/ConveyorModelUiversal.png"));
             GL11.glPopMatrix();
         }
     
