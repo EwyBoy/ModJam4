@@ -4,14 +4,11 @@ public enum Modules {
 
 	SPEED (0, "Speed"),
 	CENTER (1, "Center");
-	
-	
-	
+
 	private Modules(int i, String s){
 		
 	}
-	
-	
+
 	public Modules getModuleByID(int i){
 		if(i == 0){
 			return SPEED;

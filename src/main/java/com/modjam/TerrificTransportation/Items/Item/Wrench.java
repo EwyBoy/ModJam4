@@ -1,20 +1,15 @@
 package com.modjam.terrifictransportation.Items.Item;
 
-import com.modjam.terrifictransportation.Blocks.Block.Conveyor;
 import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
 import com.modjam.terrifictransportation.Items.Technical.ItemInfo;
 import com.modjam.terrifictransportation.KeyBindings.KeyBindings;
 import com.modjam.terrifictransportation.Texture.TextureHandler;
-import com.modjam.terrifictransportation.tileentitys.ConveyorTile;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Facing;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 

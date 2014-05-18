@@ -9,12 +9,13 @@ import net.minecraft.item.ItemStack;
 public class CraftingRecipes {
 
     public static void init() {
-        registerCrafing();
+        registerCrafting();
     }
 
-    public static void registerCrafing() {
+    public static void registerCrafting() {
 
         Item craftingComp = com.modjam.terrifictransportation.Items.Technical.Items.CraftingComp;
+        Item wrench = com.modjam.terrifictransportation.Items.Technical.Items.Wrench;
 
         GameRegistry.addRecipe(new ItemStack(Blocks.Conveyor, 4),
                 "IMI", "XOX",
@@ -39,15 +40,32 @@ public class CraftingRecipes {
         GameRegistry.addRecipe(new ItemStack(craftingComp, 1, 3),
                 "XX","XX", 'X', Items.gold_ingot);
 
+        //Handel
+        GameRegistry.addRecipe(new ItemStack(craftingComp, 1, 6),
+                "X","G","X", 'G', Items.gold_ingot, 'X', Items.iron_ingot);
 
+        //Core
+        GameRegistry.addRecipe(new ItemStack(craftingComp, 1, 5),
+                "XGX", 'G', net.minecraft.init.Blocks.lapis_block, 'X', Items.iron_ingot);
 
+        //Head
+        GameRegistry.addRecipe(new ItemStack(craftingComp, 1, 4),
+                "X X","X X"," X ",'X', net.minecraft.init.Blocks.lapis_block, 'X', Items.iron_ingot);
 
+        //Wrench
+        GameRegistry.addRecipe(new ItemStack(wrench, 1),
+                "X","Y","Z",
 
+                'X', new ItemStack(craftingComp, 1, 4),
+                'Y', new ItemStack(craftingComp, 1, 5),
+                'Z', new ItemStack(craftingComp, 1, 6));
 
+        //Wrench
+        GameRegistry.addRecipe(new ItemStack(wrench, 1),
+                "  X"," Y ","Z  ",
 
-
-
-
-
+                'X', new ItemStack(craftingComp, 1, 4),
+                'Y', new ItemStack(craftingComp, 1, 5),
+                'Z', new ItemStack(craftingComp, 1, 6));
     }
 }

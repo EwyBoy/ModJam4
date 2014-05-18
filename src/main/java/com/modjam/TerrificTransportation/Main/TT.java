@@ -7,7 +7,7 @@ import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
 import com.modjam.terrifictransportation.Info.ModInfo;
 import com.modjam.terrifictransportation.Items.Technical.Items;
 import com.modjam.terrifictransportation.KeyBindings.KeyBindings;
-import com.modjam.terrifictransportation.Network.CommonProxy;
+import com.modjam.terrifictransportation.Network.Proxies.CommonProxy;
 import com.modjam.terrifictransportation.Network.Packets.PacketPipeline;
 
 import cpw.mods.fml.common.Mod;
@@ -23,7 +23,7 @@ public class TT
     @Mod.Instance(ModInfo.ModID)
     public static TT instance;
 
-    @SidedProxy(modId = ModInfo.ModID, clientSide = "com.modjam.terrifictransportation.Network.ClientProxy", serverSide = "com.modjam.terrifictransportation.Network.CommonProxy")
+    @SidedProxy(modId = ModInfo.ModID, clientSide = "com.modjam.terrifictransportation.Network.Proxies.ClientProxy", serverSide = "com.modjam.terrifictransportation.Network.Proxies.CommonProxy")
     public static CommonProxy proxy;
     public static final PacketPipeline packetPipeline = new PacketPipeline();
     
@@ -36,7 +36,6 @@ public class TT
         proxy.initRenders();
         KeyBindings.shiftIsPressed();
         CraftingRecipes.init();
-        
     }
 
     @Mod.EventHandler

@@ -1,23 +1,20 @@
 package com.modjam.terrifictransportation.Render;
 
-
+import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.tileentity.TileEntityHopper;
 import net.minecraft.world.IBlockAccess;
-
 import org.lwjgl.opengl.GL11;
 
-import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
-import cpw.mods.fml.client.registry.RenderingRegistry;
+public class ConveyorRendererX implements ISimpleBlockRenderingHandler{
 
-public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
+     private int ID;
 
-    private int ID;
-
-    public ConveyorRenderer () {
+     public ConveyorRendererX () {
         ID = RenderingRegistry.getNextAvailableRenderId();
     }
 
@@ -64,6 +61,7 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
         tessellator.draw();
 
         GL11.glPopMatrix();
+
     }
 
     private void conveyorDirZ(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
@@ -166,8 +164,6 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
         Tessellator.instance.setColorOpaque_F(1F, 1F, 1F);
         Block router = com.modjam.terrifictransportation.Blocks.Technical.Blocks.Router;
 
-        GL11.glPushMatrix();
-
         if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper || (world.getBlock(x, y - 1, z) == router)) {
             conveyorOverInventory(world, x, y, z, block, modelId, renderer);
             if (world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x, y, z + 1) == router)) {
@@ -176,38 +172,23 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
             if (world.getTileEntity(x, y, z - 1) instanceof IInventory || (world.getBlock(x, y, z - 1) == router)) {
                 conveyorInventoryConnectNegZ(world, x, y, z, block, modelId, renderer);
             }
-            if (world.getTileEntity(x, y, z - 1) instanceof IInventory || (world.getBlock(x,y,z - 1) == router &&
-                    (world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x,y,z + 1) == router)))) {
-                conveyorDirZ(world, x, y, z, block, modelId, renderer);
-            }
-        } else  {
+        } else {
             conveyorDirZ(world, x, y, z, block, modelId, renderer);
-
-            if (world.getTileEntity(x, y, z - 1) instanceof IInventory || (world.getBlock(x,y,z - 1) == router &&
-                    (world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x,y,z + 1) == router)))) {
-                conveyorDirZ(world, x, y, z, block, modelId, renderer);
-            } else {
-
-                if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper  && world.getTileEntity(x, y, z + 1) instanceof IInventory
-                        || (world.getBlock(x, y, z + 1) == router)) {
-                    conveyorInventoryConnectPosZ(world, x, y, z, block, modelId, renderer);
-                }
-                if(world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x, y, z + 1) == router)) {
-                    conveyorInventoryConnectPosZ(world, x, y, z, block, modelId, renderer);
-                }
-                if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper  && world.getTileEntity(x, y, z - 1) instanceof IInventory
-                        || (world.getBlock(x, y, z - 1) == router)) {
-                    conveyorInventoryConnectNegZ(world, x, y, z, block, modelId, renderer);
-                }
-                if(world.getTileEntity(x, y, z - 1) instanceof IInventory || (world.getBlock(x, y, z - 1) == router)) {
-                    conveyorInventoryConnectNegZ(world, x, y, z, block, modelId, renderer);
-                }
+            if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper  && world.getTileEntity(x, y, z + 1) instanceof IInventory
+                    || (world.getBlock(x, y, z + 1) == router)) {
+                conveyorInventoryConnectPosZ(world, x, y, z, block, modelId, renderer);
             }
-
-
+            if(world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x, y, z + 1) == router)) {
+                conveyorInventoryConnectPosZ(world, x, y, z, block, modelId, renderer);
+            }
+            if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper  && world.getTileEntity(x, y, z - 1) instanceof IInventory
+                    || (world.getBlock(x, y, z - 1) == router)) {
+                conveyorInventoryConnectNegZ(world, x, y, z, block, modelId, renderer);
+            }
+            if(world.getTileEntity(x, y, z - 1) instanceof IInventory || (world.getBlock(x, y, z - 1) == router)) {
+                conveyorInventoryConnectNegZ(world, x, y, z, block, modelId, renderer);
+            }
         }
-
-        GL11.glPopMatrix();
 
         return true;
     }

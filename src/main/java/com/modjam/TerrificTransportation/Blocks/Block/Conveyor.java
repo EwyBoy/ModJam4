@@ -1,7 +1,16 @@
 package com.modjam.terrifictransportation.Blocks.Block;
 
+import com.modjam.terrifictransportation.Blocks.Technical.BlockInfo;
+import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
+import com.modjam.terrifictransportation.Items.Item.Modules;
+import com.modjam.terrifictransportation.Items.Item.Wrench;
+import com.modjam.terrifictransportation.Texture.TextureHandler;
+import com.modjam.terrifictransportation.TileEntitys.ConveyorTile;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
+import net.minecraft.block.BlockRailBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
@@ -12,24 +21,9 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.IChatComponent;
-import net.minecraft.util.IIcon;
-import net.minecraft.util.MovingObjectPosition;
-import net.minecraft.util.Vec3;
+import net.minecraft.util.*;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-
-import com.modjam.terrifictransportation.Blocks.Technical.BlockInfo;
-import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
-import com.modjam.terrifictransportation.Items.Item.Modules;
-import com.modjam.terrifictransportation.Items.Item.Wrench;
-import com.modjam.terrifictransportation.Texture.TextureHandler;
-import com.modjam.terrifictransportation.tileentitys.ConveyorTile;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
 
 public class Conveyor extends BlockContainer {
@@ -39,7 +33,6 @@ public class Conveyor extends BlockContainer {
         setHardness(1F);
         setCreativeTab(TTCreativeTabs.ClockworkBlockTab);
     }
-  
    
     @Override
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {
@@ -51,10 +44,6 @@ public class Conveyor extends BlockContainer {
         double X = entity.posX;
         double Z = entity.posZ;
 
-        if (entity.isCollidedVertically && world.getBlock(x, y, z) == Blocks.chest) {
-            entity.setFire(10);
-        }
-
         if (xAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posX) < 0.5 & Math.abs(x + 0.5 - entity.posX) > 0.1) {
             entity.motionX += Math.signum(x + 0.5 - entity.posX) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posX)) / 1.2;
         }
@@ -64,7 +53,13 @@ public class Conveyor extends BlockContainer {
         }
 
         if (!entity.isSneaking()) {
-            entity.addVelocity(0, 0, -entitySpeed);
+
+            if (world.getBlock(x, y - 1, z) == Blocks.ice || (world.getBlock(x, y - 1, z) == Blocks.packed_ice ||(world.getBlock(x, y - 1, z) == Blocks.soul_sand ))) {
+                entity.addVelocity(0,0,0);
+            } else {
+                entity.addVelocity(0, 0, -entitySpeed);
+                entity.stepHeight = 1F;
+            }
         }
         if(entity instanceof EntityItem){
         
@@ -72,7 +67,7 @@ public class Conveyor extends BlockContainer {
         if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
         	
         	ConveyorTile c = (ConveyorTile) world.getTileEntity(x, y, z);
-        	if(c.getConveyorType() == "Export Mode"){
+        	if(c.getConveyorType() == "Import Mode"){
         		
         		Block router = com.modjam.terrifictransportation.Blocks.Technical.Blocks.Router;
         		if(world.getTileEntity(x, y, z -1) instanceof IInventory || world.getBlock(x, y, z) == router){
@@ -86,9 +81,6 @@ public class Conveyor extends BlockContainer {
         				
         				return;
         			}else{
-        				
-        				
-        				
         			}
         		}
         		}
@@ -110,7 +102,7 @@ public class Conveyor extends BlockContainer {
 
     @Override
     public int getRenderType() {
-        return BlockInfo.ConveyorRenderID;
+        return BlockInfo.ConveyorRenderXID;
     }
 
     @Override
@@ -168,7 +160,7 @@ public class Conveyor extends BlockContainer {
 
     		ConveyorTile cs = (ConveyorTile) world.getTileEntity(x, y, z);
     		cs.changeConveyor(world, entityplayer);
-    		entityplayer.addChatComponentMessage(new ChatComponentText("This Conveyor is now in" + cs.getConveyorType()));
+    		entityplayer.addChatComponentMessage(new ChatComponentText("This Conveyor is now set to " + cs.getConveyorType()));
     	}
     	}
     }else{
@@ -182,10 +174,10 @@ public class Conveyor extends BlockContainer {
 
         		ConveyorTile cs = (ConveyorTile) world.getTileEntity(x, y, z);
     		if(cs.installedModules.size() == 4){
-    			entityplayer.addChatMessage(new ChatComponentText("This Conveyor has no More Space!"));
+    			entityplayer.addChatMessage(new ChatComponentText("This Conveyor has no more Space!"));
     		}else{
     			cs.installedModules.add(com.modjam.terrifictransportation.util.Modules.SPEED);
-    			this.geti
+
     		}
     		}
     	}
@@ -232,8 +224,6 @@ if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
 	}
 	
 }
-	
-
 }
 
 @Override

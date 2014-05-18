@@ -1,4 +1,4 @@
-package com.modjam.terrifictransportation.Network;
+package com.modjam.terrifictransportation.Network.Proxies;
 
 public class CommonProxy {
 
