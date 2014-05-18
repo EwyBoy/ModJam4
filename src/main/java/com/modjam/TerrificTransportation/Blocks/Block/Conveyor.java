@@ -1,6 +1,5 @@
 package com.modjam.terrifictransportation.Blocks.Block;
 
-import scala.tools.nsc.GenericRunnerCommand.HowToRun;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -14,7 +13,6 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IIcon;
@@ -73,13 +71,13 @@ entitySpeed = entitySpeed * howmanyspeed;
         double X = entity.posX;
         double Z = entity.posZ;
 
-        if (xAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posX) < 0.5 & Math.abs(x + 0.5 - entity.posX) > 0.1) {
-            entity.motionX += Math.signum(x + 0.5 - entity.posX) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posX)) / 1.2;
-        }
-
-        if (zAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posZ) < 0.5 & Math.abs(x + 0.5 - entity.posZ) > 0.1 ) {
-            entity.motionZ += Math.signum(x + 0.5 - entity.posZ) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posZ)) / 1.2;
-        }
+//        if (xAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posX) < 0.5 & Math.abs(x + 0.5 - entity.posX) > 0.1) {
+//            entity.motionX += Math.signum(x + 0.5 - entity.posX) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posX)) / 1.2;
+//        }
+//
+//        if (zAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posZ) < 0.5 & Math.abs(x + 0.5 - entity.posZ) > 0.1 ) {
+//            entity.motionZ += Math.signum(x + 0.5 - entity.posZ) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posZ)) / 1.2;
+//        }
 
         if (!entity.isSneaking()) {
 
@@ -131,36 +129,36 @@ entitySpeed = entitySpeed * howmanyspeed;
 
     @Override
     public int getRenderType() {
-        return BlockInfo.ConveyorRenderXID;
+        return BlockInfo.ConveyorRenderID;
     }
 
-    @Override
-    public void setBlockBoundsForItemRender() {
-        setBlockBounds(0F, 0F, 0F, 1F, 0.35F, 1F);
-    }
+//    @Override
+//    public void setBlockBoundsForItemRender() {
+//        setBlockBounds(0F, 0F, 0F, 1F, 0.35F, 1F);
+//    }
 
-    @Override
-    public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
-        setBlockBounds(0F, 0F, 0F, 1F, 0.2F, 1F);
-    }
-
-    @Override
-    public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z) {
-        setBlockBoundsBasedOnState(world, x, y, z);
-        return super.getCollisionBoundingBoxFromPool(world, x, y, z);
-    }
-
-    @Override
-    public AxisAlignedBB getSelectedBoundingBoxFromPool(World world, int x, int y, int z) {
-        setBlockBoundsBasedOnState(world, x, y, z);
-        return super.getSelectedBoundingBoxFromPool(world, x, y, z);
-    }
-
-    @Override
-    public MovingObjectPosition collisionRayTrace(World world, int x, int y, int z, Vec3 start, Vec3 end) {
-        setBlockBoundsBasedOnState(world, x, y, z);
-        return super.collisionRayTrace(world, x, y, z, start, end);
-    }
+//    @Override
+//    public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
+//        setBlockBounds(0F, 0F, 0F, 1F, 0.2F, 1F);
+//    }
+//
+//    @Override
+//    public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z) {
+//        setBlockBoundsBasedOnState(world, x, y, z);
+//        return super.getCollisionBoundingBoxFromPool(world, x, y, z);
+//    }
+//
+//    @Override
+//    public AxisAlignedBB getSelectedBoundingBoxFromPool(World world, int x, int y, int z) {
+//        setBlockBoundsBasedOnState(world, x, y, z);
+//        return super.getSelectedBoundingBoxFromPool(world, x, y, z);
+//    }
+//
+//    @Override
+//    public MovingObjectPosition collisionRayTrace(World world, int x, int y, int z, Vec3 start, Vec3 end) {
+//        setBlockBoundsBasedOnState(world, x, y, z);
+//        return super.collisionRayTrace(world, x, y, z, start, end);
+//    }
 
     @SideOnly(Side.CLIENT)
     private IIcon TextureTop;
@@ -262,69 +260,9 @@ public TileEntity createNewTileEntity(World var1, int var2) {
 		
 
 	@Override 
-	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack item){
-		 Block block = world.getBlock(x, y, z - 1);
-	        Block block1 = world.getBlock(x, y, z + 1);
-	        Block block2 = world.getBlock(x - 1, y, z);
-	        Block block3 = world.getBlock(x + 1, y, z);
-	        byte b0 = 0;
-	        int l = MathHelper.floor_double((double)(entity.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
-
-	        if (l == 0)
-	        {
-	            b0 = 2;
-	        }
-
-	        if (l == 1)
-	        {
-	            b0 = 5;
-	        }
-
-	        if (l == 2)
-	        {
-	            b0 = 3;
-	        }
-
-	        if (l == 3)
-	        {
-	            b0 = 4;
-	        }
-
-	        if (block != this && block1 != this && block2 != this && block3 != this)
-	        {
-	            world.setBlockMetadataWithNotify(x, y, z, b0, 3);
-	        }
-	        else
-	        {
-	            if ((block == this || block1 == this) && (b0 == 4 || b0 == 5))
-	            {
-	                if (block == this)
-	                {
-	                    world.setBlockMetadataWithNotify(x, y, z - 1, b0, 3);
-	                }
-	                else
-	                {
-	                    world.setBlockMetadataWithNotify(x, y, z + 1, b0, 3);
-	                }
-
-	                world.setBlockMetadataWithNotify(x, y, z, b0, 3);
-	            }
-
-	            if ((block2 == this || block3 == this) && (b0 == 2 || b0 == 3))
-	            {
-	                if (block2 == this)
-	                {
-	                    world.setBlockMetadataWithNotify(x - 1, y, z, b0, 3);
-	                }
-	                else
-	                {
-	                    world.setBlockMetadataWithNotify(x + 1, y, z, b0, 3);
-	                }
-
-	                world.setBlockMetadataWithNotify(x, y, z, b0, 3);
-	            }
-	        }
-
+	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack item){
+		 int dir = MathHelper.floor_double((double)((player.rotationYaw * 4F) / 360F) + 0.5D) & 3;
+	        world.setBlockMetadataWithNotify(x, y, z, dir, 0);
 	        
 	}
 

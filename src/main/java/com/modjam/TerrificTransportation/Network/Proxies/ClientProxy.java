@@ -16,9 +16,7 @@ public class ClientProxy extends CommonProxy {
         ConveyorRenderer conveyorRenderer = new ConveyorRenderer();
         ClientRegistry.bindTileEntitySpecialRenderer(ConveyorTile.class, conveyorRenderer);
 
-        ConveyorRendererX conveyorRendererX = new ConveyorRendererX();
-        RenderingRegistry.registerBlockHandler(conveyorRendererX);
-        BlockInfo.ConveyorRenderXID = conveyorRendererX.getRenderId();
+
 
         RouterRender routerRender = new RouterRender();
         RenderingRegistry.registerBlockHandler(routerRender);
