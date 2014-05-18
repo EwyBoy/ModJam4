@@ -1,22 +1,23 @@
 package com.modjam.terrifictransportation.Render;
 
 
-import com.modjam.terrifictransportation.Blocks.Technical.Blocks;
-import com.modjam.terrifictransportation.Texture.TextureHandler;
-import com.modjam.terrifictransportation.tileentitys.ConveyorTile;
-import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.entity.Entity;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import net.minecraftforge.client.model.IModelCustom;
-import net.minecraftforge.client.model.techne.TechneModel;
-import net.minecraftforge.client.model.techne.TechneModelLoader;
 
 import org.lwjgl.opengl.GL11;
+
+import com.modjam.terrifictransportation.Blocks.Technical.Blocks;
+import com.modjam.terrifictransportation.Models.Coveyor;
+import com.modjam.terrifictransportation.Models.CoveyorImportExport;
+import com.modjam.terrifictransportation.tileentitys.ConveyorTile;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class ConveyorRenderer extends TileEntitySpecialRenderer {
 
@@ -37,11 +38,11 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
         }
     
       
-        public void renderConveyor(ConveyorTile tl, World world, int i, int j, int k, Block block) {
+        public void renderConveyor(ConveyorTile tl, World world, int x, int y, int z, Block block) {
             Tessellator tessellator = Tessellator.instance;
            
             float f = block.getAmbientOcclusionLightValue();
-            int l = world.getLightBrightnessForSkyBlocks(i, j, k, 0);
+            int l = world.getLightBrightnessForSkyBlocks(x, y, z, 0);
             int l1 = l % 65536;
             int l2 = l / 65536;
             tessellator.setColorOpaque_F(f, f, f);
@@ -49,14 +50,20 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
 
         
 
-            int dir = world.getBlockMetadata(i, j, k);
+            int dir = world.getBlockMetadata(x, y, z);
 
             GL11.glPushMatrix();
             GL11.glTranslatef(0.5F, 0, 0.5F);
            
             GL11.glRotatef(dir * (-90F), 0F, 1F, 0F);
             GL11.glTranslatef(-0.5F, 0, -0.5F);
-            
+            if(world.getTileEntity(x, y, z - 1) instanceof IInventory ||world.getTileEntity(x, y, z + 1) instanceof IInventory || world.getTileEntity(x + 1, y, z ) instanceof IInventory || world.getTileEntity(x - 1, y, z) instanceof IInventory){
+            	CoveyorImportExport cie = new CoveyorImportExport();
+            	cie.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
+            }else{
+            	Coveyor c = new Coveyor();
+            	c.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
+            }
       
             GL11.glPopMatrix();
         }
