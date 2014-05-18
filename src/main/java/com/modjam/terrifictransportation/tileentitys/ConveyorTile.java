@@ -3,6 +3,8 @@ package com.modjam.terrifictransportation.tileentitys;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.modjam.terrifictransportation.util.Modules;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -71,7 +73,19 @@ public class ConveyorTile extends TileEntity {
 	    public void readFromNBT(NBTTagCompound nbt) {
 	    	setConveyorType(nbt.getString("conveyorType"));
 	    	setConveyorTypeID(nbt.getInteger("conveyorTypeID"));
-	    	
+	    	installedModules.clear();
+	    	installedModules.add(getModuleByID(nbt.getInteger("module1")));
+	    	installedModules.add(getModuleByID(nbt.getInteger("module2")));
+	    	installedModules.add(getModuleByID(nbt.getInteger("module3")));
+	    	installedModules.add(getModuleByID(nbt.getInteger("module4")));
 	    }
-    
+    public Modules getModuleByID(int i){
+    	if(i == 0){
+    		return Modules.SPEED;
+    	} else if (i == 1){
+    		return Modules.CENTER;
+    	}else{
+    		return null;
+    	}
+    }
 }

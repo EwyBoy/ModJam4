@@ -1,5 +1,6 @@
 package com.modjam.terrifictransportation.Blocks.Block;
 
+import scala.tools.nsc.GenericRunnerCommand.HowToRun;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -44,13 +45,28 @@ public class Conveyor extends BlockContainer {
    
     @Override
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {
+    	int howmanyspeed = 1;
 if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
 	ConveyorTile cd = (ConveyorTile) world.getTileEntity(x, y, z);
 	if(cd.installedModules.contains(com.modjam.terrifictransportation.util.Modules.SPEED)){
 		
+		if(cd.installedModules.get(1).equals(com.modjam.terrifictransportation.util.Modules.SPEED)){
+			howmanyspeed++;
+		}
+		
+		if(cd.installedModules.get(2).equals(com.modjam.terrifictransportation.util.Modules.SPEED)){
+			howmanyspeed++;
+		}
+		if(cd.installedModules.get(3).equals(com.modjam.terrifictransportation.util.Modules.SPEED)){
+			howmanyspeed++;
+		}
+		
 	}
+	
 }
-        double entitySpeed = 0.025;
+double entitySpeed = 0.025;
+entitySpeed = entitySpeed * howmanyspeed;
+        
         int meta = world.getBlockMetadata(x, y, z);
         int xAxis[] = {0,1,0,-1};
         int zAxis[] = {-1,0,1,0};
