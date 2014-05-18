@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
 import org.lwjgl.opengl.GL11;
@@ -53,16 +54,17 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
             int dir = world.getBlockMetadata(x, y, z);
 
             GL11.glPushMatrix();
-            GL11.glTranslatef(0.5F, 0, 0.5F);
+            GL11.glTranslatef(0.5F, -1.2F, 0.5F);
            
             GL11.glRotatef(dir * (-90F), 0F, 1F, 0F);
-            GL11.glTranslatef(-0.5F, 0, -0.5F);
+            
             if(world.getTileEntity(x, y, z - 1) instanceof IInventory ||world.getTileEntity(x, y, z + 1) instanceof IInventory || world.getTileEntity(x + 1, y, z ) instanceof IInventory || world.getTileEntity(x - 1, y, z) instanceof IInventory){
             	CoveyorImportExport cie = new CoveyorImportExport();
             	cie.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
             }else{
             	Coveyor c = new Coveyor();
             	c.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
+            	this.bindTexture(new ResourceLocation(""));
             }
       
             GL11.glPopMatrix();

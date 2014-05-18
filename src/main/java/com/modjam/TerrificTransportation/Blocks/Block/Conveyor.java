@@ -121,21 +121,23 @@ entitySpeed = entitySpeed * howmanyspeed;
     public boolean renderAsNormalBlock() {
         return false;
     }
+    @Override
+    public boolean shouldSideBeRendered(IBlockAccess iblockaccess, int i, int j, int k, int l)
+    {
+       return false;
+    }
 
     @Override
     public boolean isOpaqueCube() {
         return false;
     }
 
-    @Override
-    public int getRenderType() {
-        return BlockInfo.ConveyorRenderID;
-    }
+   
 
-//    @Override
-//    public void setBlockBoundsForItemRender() {
-//        setBlockBounds(0F, 0F, 0F, 1F, 0.35F, 1F);
-//    }
+   @Override
+ public void setBlockBoundsForItemRender() {
+    setBlockBounds(0F, 0F, 0F, 1F, 0.35F, 1F);
+  }
 
 //    @Override
 //    public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z) {
@@ -160,20 +162,7 @@ entitySpeed = entitySpeed * howmanyspeed;
 //        return super.collisionRayTrace(world, x, y, z, start, end);
 //    }
 
-    @SideOnly(Side.CLIENT)
-    private IIcon TextureTop;
-
-    @SideOnly(Side.CLIENT)
-    private IIcon TextureSideX;
-    private IIcon TextureSideZ;
- 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister register) {
-        TextureSideX = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureSidesX);
-        TextureSideZ = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureSidesZ);
-        TextureTop = register.registerIcon(TextureHandler.texturePath + ":" + BlockInfo.ConveyorTextureTop);
-    }
+   
     @Override
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer entityplayer, int par6, float par7, float par8, float par9) {
    if(!world.isRemote){
@@ -212,20 +201,7 @@ entitySpeed = entitySpeed * howmanyspeed;
 	return true;
     
     }
-    @Override
-    @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int side , int meta) {
-        if(side == 1) {
-           return TextureTop;
-        }
-        if (side == 4) {
-            return TextureSideX;
-        }
-        if (side == 5) {
-            return TextureSideX;
-        }
-        return TextureSideZ;
-    }
+    
 @Override
     public void onNeighborChange(IBlockAccess world, int x, int y, int z, int tileX, int tileY, int tileZ){
 if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
