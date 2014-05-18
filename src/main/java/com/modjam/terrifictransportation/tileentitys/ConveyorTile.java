@@ -68,6 +68,8 @@ public class ConveyorTile extends TileEntity {
 	        nbt.setInteger("module3", installedModules.get(2).getModuleID(installedModules.get(2).name()));
 	        nbt.setInteger("module4", installedModules.get(3).getModuleID(installedModules.get(3).name()));
 	 }
+
+    world
 	    
 	    @Override
 	    public void readFromNBT(NBTTagCompound nbt) {
