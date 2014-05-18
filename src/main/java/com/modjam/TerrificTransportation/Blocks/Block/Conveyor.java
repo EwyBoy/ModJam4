@@ -3,7 +3,6 @@ package com.modjam.terrifictransportation.Blocks.Block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -15,22 +14,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-import com.modjam.terrifictransportation.Blocks.Technical.BlockInfo;
 import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
 import com.modjam.terrifictransportation.Items.Item.Modules;
 import com.modjam.terrifictransportation.Items.Item.Wrench;
-import com.modjam.terrifictransportation.Texture.TextureHandler;
 import com.modjam.terrifictransportation.tileentitys.ConveyorTile;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
 
 public class Conveyor extends BlockContainer {
@@ -48,14 +41,14 @@ if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
 	ConveyorTile cd = (ConveyorTile) world.getTileEntity(x, y, z);
 	if(cd.installedModules.contains(com.modjam.terrifictransportation.util.Modules.SPEED)){
 		
-		if(cd.installedModules.get(1).equals(com.modjam.terrifictransportation.util.Modules.SPEED) && cd.installedModules.size() == 1){
+		if(cd.installedModules.get(0).equals(com.modjam.terrifictransportation.util.Modules.SPEED) && cd.installedModules.size() == 1){
 			howmanyspeed++;
 		}
 		
-		if(cd.installedModules.get(2).equals(com.modjam.terrifictransportation.util.Modules.SPEED)&& cd.installedModules.size() == 2){
+		if(cd.installedModules.get(1).equals(com.modjam.terrifictransportation.util.Modules.SPEED)&& cd.installedModules.size() == 2){
 			howmanyspeed++;
 		}
-		if(cd.installedModules.get(3).equals(com.modjam.terrifictransportation.util.Modules.SPEED)&& cd.installedModules.size() == 3){
+		if(cd.installedModules.get(2).equals(com.modjam.terrifictransportation.util.Modules.SPEED)&& cd.installedModules.size() == 3){
 			howmanyspeed++;
 		}
 		

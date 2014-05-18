@@ -63,10 +63,10 @@ public class ConveyorTile extends TileEntity {
 	    public void writeToNBT(NBTTagCompound nbt) {
 	    	nbt.setString("conveyorType", ConveyorType);
 	    	nbt.setInteger("conveyorTypeID", ConveyorTypeID);
-	        //nbt.setInteger("module1", installedModules.get(1).getModuleID(installedModules.get(0).name()));
-	       // nbt.setInteger("module2", installedModules.get(2).getModuleID(installedModules.get(1).name()));
-	       // nbt.setInteger("module3", installedModules.get(3).getModuleID(installedModules.get(2).name()));
-	       // nbt.setInteger("module4", installedModules.get(4).getModuleID(installedModules.get(3).name()));
+	        nbt.setInteger("module1", installedModules.get(0).getModuleID(installedModules.get(0).name()));
+	        nbt.setInteger("module2", installedModules.get(1).getModuleID(installedModules.get(1).name()));
+	        nbt.setInteger("module3", installedModules.get(2).getModuleID(installedModules.get(2).name()));
+	        nbt.setInteger("module4", installedModules.get(3).getModuleID(installedModules.get(3).name()));
 	 }
 
     
