@@ -1,16 +1,7 @@
 package com.modjam.terrifictransportation.Blocks.Block;
 
-import com.modjam.terrifictransportation.Blocks.Technical.BlockInfo;
-import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
-import com.modjam.terrifictransportation.Items.Item.Modules;
-import com.modjam.terrifictransportation.Items.Item.Wrench;
-import com.modjam.terrifictransportation.Texture.TextureHandler;
-import com.modjam.terrifictransportation.TileEntitys.ConveyorTile;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
-import net.minecraft.block.BlockRailBase;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
@@ -21,9 +12,23 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.*;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.IIcon;
+import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+
+import com.modjam.terrifictransportation.Blocks.Technical.BlockInfo;
+import com.modjam.terrifictransportation.CreativeTabs.TTCreativeTabs;
+import com.modjam.terrifictransportation.Items.Item.Modules;
+import com.modjam.terrifictransportation.Items.Item.Wrench;
+import com.modjam.terrifictransportation.Texture.TextureHandler;
+import com.modjam.terrifictransportation.tileentitys.ConveyorTile;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 
 public class Conveyor extends BlockContainer {
@@ -177,7 +182,6 @@ public class Conveyor extends BlockContainer {
     			entityplayer.addChatMessage(new ChatComponentText("This Conveyor has no more Space!"));
     		}else{
     			cs.installedModules.add(com.modjam.terrifictransportation.util.Modules.SPEED);
-
     		}
     		}
     	}
@@ -204,7 +208,7 @@ public class Conveyor extends BlockContainer {
     public void onNeighborChange(IBlockAccess world, int x, int y, int z, int tileX, int tileY, int tileZ){
 if(world.getTileEntity(x, y, z) instanceof ConveyorTile){
 	ConveyorTile c = (ConveyorTile) world.getTileEntity(x, y, z);
-	if(c.getConveyorTypeID() == 1){
+	if(c.getConveyorTypeID() == 2){
 		Block router = com.modjam.terrifictransportation.Blocks.Technical.Blocks.Router;
 		if(world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x, y, z) == router)){
 			IInventory inv = (IInventory) world.getTileEntity(x, y, z + 1);

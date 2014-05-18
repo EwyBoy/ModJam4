@@ -67,7 +67,7 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
     }
 
     private void conveyorDirZ(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
-
+            
         block.setBlockBounds(0F, 0F, 0F, 1F, 0.15F, 1F);
         renderer.setRenderBoundsFromBlock(block);
         renderer.renderStandardBlock(block, x, y ,z);
@@ -167,7 +167,7 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
         Block router = com.modjam.terrifictransportation.Blocks.Technical.Blocks.Router;
 
         GL11.glPushMatrix();
-
+             
         if (world.getTileEntity(x, y - 1, z) instanceof TileEntityHopper || (world.getBlock(x, y - 1, z) == router)) {
             conveyorOverInventory(world, x, y, z, block, modelId, renderer);
             if (world.getTileEntity(x, y, z + 1) instanceof IInventory || (world.getBlock(x, y, z + 1) == router)) {

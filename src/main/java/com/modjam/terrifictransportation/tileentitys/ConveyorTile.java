@@ -1,4 +1,4 @@
-package com.modjam.terrifictransportation.TileEntitys;
+package com.modjam.terrifictransportation.tileentitys;
 
 import java.util.ArrayList;
 import java.util.List;
