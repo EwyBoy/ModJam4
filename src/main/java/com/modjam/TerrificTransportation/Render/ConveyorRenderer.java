@@ -4,7 +4,9 @@ package com.modjam.terrifictransportation.Render;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityHopper;
 import net.minecraft.world.IBlockAccess;
 
@@ -13,7 +15,7 @@ import org.lwjgl.opengl.GL11;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 
-public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
+public class ConveyorRenderer extends TileEntitySpecialRenderer {
 
     private int ID;
 
@@ -212,13 +214,12 @@ public class ConveyorRenderer implements ISimpleBlockRenderingHandler {
         return true;
     }
 
-    @Override
-    public boolean shouldRender3DInInventory(int modelId) {
-        return true;
-    }
+    
 
-    @Override
-    public int getRenderId() {
-        return ID;
-    }
+	@Override
+	public void renderTileEntityAt(TileEntity var1, double var2, double var4,
+			double var6, float var8) {
+		// TODO Auto-generated method stub
+		
+	}
 }

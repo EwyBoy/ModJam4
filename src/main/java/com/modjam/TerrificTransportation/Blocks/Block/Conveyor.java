@@ -5,6 +5,7 @@ import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -12,9 +13,11 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IIcon;
+import net.minecraft.util.MathHelper;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.IBlockAccess;
@@ -237,7 +240,72 @@ public TileEntity createNewTileEntity(World var1, int var2) {
 }
 		
 
-	
+	@Override 
+	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack item){
+		 Block block = world.getBlock(x, y, z - 1);
+	        Block block1 = world.getBlock(x, y, z + 1);
+	        Block block2 = world.getBlock(x - 1, y, z);
+	        Block block3 = world.getBlock(x + 1, y, z);
+	        byte b0 = 0;
+	        int l = MathHelper.floor_double((double)(entity.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
+
+	        if (l == 0)
+	        {
+	            b0 = 2;
+	        }
+
+	        if (l == 1)
+	        {
+	            b0 = 5;
+	        }
+
+	        if (l == 2)
+	        {
+	            b0 = 3;
+	        }
+
+	        if (l == 3)
+	        {
+	            b0 = 4;
+	        }
+
+	        if (block != this && block1 != this && block2 != this && block3 != this)
+	        {
+	            world.setBlockMetadataWithNotify(x, y, z, b0, 3);
+	        }
+	        else
+	        {
+	            if ((block == this || block1 == this) && (b0 == 4 || b0 == 5))
+	            {
+	                if (block == this)
+	                {
+	                    world.setBlockMetadataWithNotify(x, y, z - 1, b0, 3);
+	                }
+	                else
+	                {
+	                    world.setBlockMetadataWithNotify(x, y, z + 1, b0, 3);
+	                }
+
+	                world.setBlockMetadataWithNotify(x, y, z, b0, 3);
+	            }
+
+	            if ((block2 == this || block3 == this) && (b0 == 2 || b0 == 3))
+	            {
+	                if (block2 == this)
+	                {
+	                    world.setBlockMetadataWithNotify(x - 1, y, z, b0, 3);
+	                }
+	                else
+	                {
+	                    world.setBlockMetadataWithNotify(x + 1, y, z, b0, 3);
+	                }
+
+	                world.setBlockMetadataWithNotify(x, y, z, b0, 3);
+	            }
+	        }
+
+	        
+	}
 
 
 
