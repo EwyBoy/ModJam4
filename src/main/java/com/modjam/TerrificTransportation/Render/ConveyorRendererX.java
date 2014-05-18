@@ -189,7 +189,6 @@ public class ConveyorRendererX implements ISimpleBlockRenderingHandler{
                 conveyorInventoryConnectNegZ(world, x, y, z, block, modelId, renderer);
             }
         }
-
         return true;
     }
 
