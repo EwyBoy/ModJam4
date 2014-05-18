@@ -84,7 +84,12 @@ entitySpeed = entitySpeed * howmanyspeed;
             if (world.getBlock(x, y - 1, z) == Blocks.ice || (world.getBlock(x, y - 1, z) == Blocks.packed_ice ||(world.getBlock(x, y - 1, z) == Blocks.soul_sand ))) {
                 entity.addVelocity(0,0,0);
             } else {
-                entity.addVelocity(0, 0, -entitySpeed);
+            	if(world.getBlockMetadata(x, y, z) == 0){
+            		entity.addVelocity(0, 0, -entitySpeed);
+            	}else if (world.getBlockMetadata(x, y, z) == 3){
+            		entity.addVelocity(- entitySpeed, 0, 0);
+            	}
+                
                 entity.stepHeight = 1F;
             }
         }
@@ -239,7 +244,7 @@ public TileEntity createNewTileEntity(World var1, int var2) {
 	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack item){
 		 int dir = MathHelper.floor_double((double)((player.rotationYaw * 4F) / 360F) + 0.5D) & 3;
 	        world.setBlockMetadataWithNotify(x, y, z, dir, 0);
-	        
+	        System.out.print(dir);
 	}
 
 
