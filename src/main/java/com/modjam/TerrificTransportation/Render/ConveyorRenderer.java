@@ -16,6 +16,7 @@ import org.lwjgl.opengl.GL11;
 import com.modjam.terrifictransportation.Blocks.Technical.Blocks;
 import com.modjam.terrifictransportation.Models.Coveyor;
 import com.modjam.terrifictransportation.Models.CoveyorImportExport;
+import com.modjam.terrifictransportation.Texture.TextureHandler;
 import com.modjam.terrifictransportation.tileentitys.ConveyorTile;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -56,7 +57,7 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
             GL11.glPushMatrix();
             GL11.glTranslatef(0.5F, -1.2F, 0.5F);
            
-            GL11.glRotatef(dir * (-90F), 0F, 1F, 0F);
+            GL11.glRotatef(-90F, 0F, 0F, 1F);
             
             if(world.getTileEntity(x, y, z - 1) instanceof IInventory ||world.getTileEntity(x, y, z + 1) instanceof IInventory || world.getTileEntity(x + 1, y, z ) instanceof IInventory || world.getTileEntity(x - 1, y, z) instanceof IInventory){
             	CoveyorImportExport cie = new CoveyorImportExport();
@@ -64,7 +65,7 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
             }else{
             	Coveyor c = new Coveyor();
             	c.render((Entity)null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
-            	this.bindTexture(new ResourceLocation(""));
+            	this.bindTexture(new ResourceLocation(TextureHandler.texturePath + ":/textures/blocks/ConveyorModelUiversal.png"));
             }
       
             GL11.glPopMatrix();
