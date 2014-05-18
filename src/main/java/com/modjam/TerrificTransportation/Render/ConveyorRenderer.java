@@ -9,7 +9,10 @@ import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.client.model.techne.TechneModelLoader;
+
 import org.lwjgl.opengl.GL11;
 
 public class ConveyorRenderer extends TileEntitySpecialRenderer {
@@ -50,8 +53,8 @@ public class ConveyorRenderer extends TileEntitySpecialRenderer {
            
             GL11.glRotatef(dir * (-90F), 0F, 1F, 0F);
             GL11.glTranslatef(-0.5F, 0, -0.5F);
-            
-        
+            TechneModelLoader ml = new TechneModelLoader();
+        ml.loadInstance(new ResourceLocation("/assets/terrifictransportation/textures/blocks/Conveyor.tcn")).renderAll();
 
             GL11.glPopMatrix();
         }
