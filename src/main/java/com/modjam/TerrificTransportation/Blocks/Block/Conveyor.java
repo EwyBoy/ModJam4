@@ -64,13 +64,13 @@ entitySpeed = entitySpeed * howmanyspeed;
         double X = entity.posX;
         double Z = entity.posZ;
 
-//        if (xAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posX) < 0.5 & Math.abs(x + 0.5 - entity.posX) > 0.1) {
-//            entity.motionX += Math.signum(x + 0.5 - entity.posX) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posX)) / 1.2;
-//        }
-//
-//        if (zAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posZ) < 0.5 & Math.abs(x + 0.5 - entity.posZ) > 0.1 ) {
-//            entity.motionZ += Math.signum(x + 0.5 - entity.posZ) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posZ)) / 1.2;
-//        }
+        if (xAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posX) < 0.5 & Math.abs(x + 0.5 - entity.posX) > 0.1) {
+           entity.motionX += Math.signum(x + 0.5 - entity.posX) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posX)) / 1.2;
+       }
+
+        if (zAxis[meta] == 0 & Math.abs(x + 0.5 - entity.posZ) < 0.5 & Math.abs(x + 0.5 - entity.posZ) > 0.1 ) {
+            entity.motionZ += Math.signum(x + 0.5 - entity.posZ) * Math.min(entitySpeed, Math.abs(x + 0.5 - entity.posZ)) / 1.2;
+       }
 
         if (!entity.isSneaking()) {
 
