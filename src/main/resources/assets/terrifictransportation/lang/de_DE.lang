@@ -1,0 +1,21 @@
+#German Language by Cryma
+
+#Block
+
+tile.Conveyor.name=Förderband
+
+#Items
+
+CraftingComponents0.name=Zahnrad
+CraftingComponents1.name=Gleitrolle
+CraftingComponents2.name=Gleitrollen Streifen
+CraftingComponents3.name=Förderband
+CraftingComponents4.name=Schraubenschlüssel Kopf
+CraftingComponents5.name=Kern
+CraftingComponents6.name=Schraubenschlüssel Handstück
+
+Modules0.name=Geschwindigkeits Modul
+Modules1.name=Center Modul
+Modules2.name=Kühlungs Modul
+Modules3.name=Super-Kühlungs Modul
+Modules4.name=Super-fantastisches Modul
